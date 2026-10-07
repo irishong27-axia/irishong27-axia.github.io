@@ -1,1187 +1,858 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="FDT·X Lab 2026年底共创赛事企业合作完整报价方案">
-  <title>FDT·X Lab｜企业合作完整报价方案</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23211829'/%3E%3Ccircle cx='32' cy='32' r='19' fill='none' stroke='%23b763e6' stroke-width='4'/%3E%3Cpath d='M24 21h12c7 0 11 4 11 10 0 5-3 8-8 9l9 10H38l-8-10h-1v10h-5V21zm5 5v9h7c4 0 6-1 6-4s-2-5-6-5h-7z' fill='white'/%3E%3C/svg%3E">
-  <style>
-    :root {
-      --ink: #211829;
-      --ink-2: #35263e;
-      --violet: #772d9e;
-      --violet-2: #ae57d7;
-      --lavender: #f3eef6;
-      --paper: #fff;
-      --line: #dfd6e4;
-      --muted: #706578;
-      --green: #236b4f;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      color: var(--ink);
-      background: #e9e3ec;
-      font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
-      font-size: 16px;
-      line-height: 1.65;
-      -webkit-font-smoothing: antialiased;
-    }
-    .page {
-      width: min(1180px, 100%);
-      margin: 0 auto;
-      overflow: hidden;
-      background: var(--paper);
-      box-shadow: 0 24px 80px rgba(33,24,41,.12);
-    }
-    .topbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      min-height: 64px;
-      padding: 0 5vw;
-      color: #fff;
-      background: var(--ink-2);
-      font-size: .88rem;
-      letter-spacing: .04em;
-    }
-    .brand { display: flex; align-items: center; gap: 12px; }
-    .brand-mark {
-      display: grid;
-      place-items: center;
-      width: 30px;
-      height: 30px;
-      border: 1px solid rgba(255,255,255,.72);
-      border-radius: 50%;
-      font-family: Georgia, serif;
-      font-size: .78rem;
-    }
-    .topbar .en { color: rgba(255,255,255,.58); font-size: .72rem; }
-    .hero {
-      position: relative;
-      min-height: 500px;
-      padding: 96px 5vw 76px;
-      color: #fff;
-      background: var(--ink);
-      isolation: isolate;
-    }
-    h1, h2, h3, p { margin-top: 0; }
-    h1 {
-      max-width: 850px;
-      margin-bottom: 10px;
-      font-size: clamp(4rem, 9vw, 7.5rem);
-      line-height: .98;
-      letter-spacing: -.045em;
-      font-weight: 640;
-    }
-    .hero-subtitle {
-      margin: 0 0 26px;
-      color: #e1b0f5;
-      font-size: clamp(1.35rem, 2.7vw, 2.15rem);
-      line-height: 1.2;
-      letter-spacing: .02em;
-      font-weight: 580;
-    }
-    .eyebrow {
-      margin: 0 0 18px;
-      color: #cd88ec;
-      font-size: .77rem;
-      font-weight: 750;
-      letter-spacing: .11em;
-      text-transform: uppercase;
-    }
-    .hero-lead {
-      max-width: 760px;
-      margin-bottom: 34px;
-      color: rgba(255,255,255,.78);
-      font-size: 1.08rem;
-    }
-    .event-meta { display: flex; flex-wrap: wrap; gap: 10px; }
-    .event-meta span {
-      padding: 7px 14px;
-      border: 1px solid rgba(255,255,255,.32);
-      border-radius: 999px;
-      color: rgba(255,255,255,.9);
-      font-size: .86rem;
-    }
-    .hero-footer {
-      position: absolute;
-      left: 5vw;
-      right: 5vw;
-      bottom: 22px;
-      display: flex;
-      justify-content: space-between;
-      padding-top: 14px;
-      border-top: 1px solid rgba(255,255,255,.18);
-      color: rgba(255,255,255,.58);
-      font-size: .76rem;
-      letter-spacing: .06em;
-    }
-    section { padding: 76px 5vw; }
-    section.alt { background: var(--lavender); }
-    section.dark { color: #fff; background: var(--ink); }
-    .section-head {
-      display: grid;
-      grid-template-columns: minmax(0,1fr) minmax(280px,.65fr);
-      gap: 44px;
-      align-items: end;
-      margin-bottom: 38px;
-    }
-    .section-head h2 {
-      margin-bottom: 0;
-      font-size: clamp(1.85rem, 3.6vw, 3rem);
-      line-height: 1.22;
-      letter-spacing: -.035em;
-      font-weight: 620;
-    }
-    .section-head .summary { margin-bottom: 3px; color: var(--muted); }
-    .dark .section-head .summary { color: rgba(255,255,255,.67); }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FDT·X Lab — 72小时未来组织实验室 · 官方网站</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="partnership.css">
+<style>
+:root{
+  --bg:#1b1021; --navy:#281a2f;
+  --card:color-mix(in oklab,#281a2f 70%,#000);
+  --card-2:color-mix(in oklab,#281a2f 45%,#000);
+  --mint:#debcea; --text:#fff; --muted:#c1b3c8;
+  --line:hsla(0,0%,100%,.15); --line-soft:hsla(0,0%,100%,.08);
+  --sans:'Inter','Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--mint);color:var(--navy)}
+a{color:inherit}
 
-    .about-intro {
-      margin-bottom: 72px;
-    }
-    .about-head {
-      display: grid;
-      grid-template-columns: minmax(0,1.08fr) minmax(320px,.92fr);
-      gap: 48px;
-      align-items: end;
-      margin-bottom: 34px;
-    }
-    .about-head h2 {
-      margin-bottom: 0;
-      font-size: clamp(2.15rem, 4.6vw, 3.75rem);
-      line-height: 1.14;
-      letter-spacing: -.045em;
-      font-weight: 640;
-    }
-    .about-lead {
-      margin-bottom: 0;
-      color: var(--muted);
-      font-size: 1.02rem;
-    }
-    .about-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 9px;
-      margin-bottom: 22px;
-    }
-    .about-meta span {
-      padding: 6px 12px;
-      border: 1px solid #d9c8e2;
-      border-radius: 999px;
-      color: var(--violet);
-      background: #faf7fc;
-      font-size: .8rem;
-      font-weight: 680;
-    }
-    .organizer-grid {
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      gap: 14px;
-      margin-bottom: 16px;
-    }
-    .organizer-card {
-      min-height: 210px;
-      padding: 24px;
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      background: #fff;
-    }
-    .organizer-card span {
-      display: block;
-      margin-bottom: 18px;
-      color: var(--violet);
-      font-size: .72rem;
-      font-weight: 760;
-      letter-spacing: .08em;
-    }
-    .organizer-card h3 { margin-bottom: 9px; font-size: 1.08rem; }
-    .organizer-card p { margin-bottom: 0; color: var(--muted); font-size: .88rem; }
-    .about-method {
-      display: grid;
-      grid-template-columns: repeat(5,1fr);
-      gap: 10px;
-      margin: 16px 0;
-    }
-    .about-method div {
-      padding: 18px;
-      border-radius: 14px;
-      color: #fff;
-      background: var(--ink-2);
-    }
-    .about-method small { display: block; margin-bottom: 8px; color: #d891f2; font-size: .69rem; font-weight: 760; }
-    .about-method b { display: block; font-size: .91rem; line-height: 1.45; }
-    .invite-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-      margin-bottom: 16px;
-    }
-    .invite-card {
-      padding: 24px;
-      border-radius: 16px;
-      background: var(--lavender);
-    }
-    .invite-card h3 { margin-bottom: 9px; font-size: 1.08rem; }
-    .invite-card p { margin-bottom: 0; color: var(--muted); font-size: .9rem; }
-    .vision-banner {
-      display: grid;
-      grid-template-columns: minmax(150px,.32fr) 1fr;
-      gap: 28px;
-      align-items: center;
-      padding: 28px;
-      border-radius: 18px;
-      color: #fff;
-      background: var(--ink);
-    }
-    .vision-banner span { color: #d891f2; font-size: .76rem; font-weight: 760; letter-spacing: .09em; }
-    .vision-banner p { margin-bottom: 0; color: rgba(255,255,255,.82); font-size: 1.04rem; }
+/* ---------- topbar + tabs ---------- */
+.topbar{position:fixed;inset:0 0 auto 0;z-index:100;background:color-mix(in oklab,var(--bg) 78%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line-soft)}
+.topbar-in{max-width:1180px;margin:0 auto;padding:0 28px;height:64px;display:flex;align-items:center;gap:24px}
+.wordmark{font-weight:800;font-size:18px;letter-spacing:-.01em;text-decoration:none;display:flex;align-items:center;gap:8px;flex-shrink:0;cursor:pointer}
+.wordmark .x{color:var(--mint)}
+.tabs{display:flex;gap:4px;flex:1;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{
+  font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--muted);
+  padding:8px 16px;border-radius:999px;cursor:pointer;white-space:nowrap;border:1px solid transparent;
+  background:none;transition:all .3s var(--ease);
+}
+.tab:hover{color:var(--text)}
+.tab.on{color:var(--navy);background:var(--mint);font-weight:700}
+.top-cta{
+  flex-shrink:0;font-size:12px;font-weight:700;text-decoration:none;color:var(--mint);
+  border:1px solid rgba(222,188,234,.45);border-radius:999px;padding:8px 16px;transition:all .3s var(--ease);cursor:pointer;background:none;font-family:var(--sans);
+}
+.top-cta:hover{background:var(--mint);color:var(--navy)}
 
-    .reason-grid {
-      display: grid;
-      grid-template-columns: repeat(4,1fr);
-      gap: 14px;
-    }
-    .reason-card {
-      min-height: 210px;
-      padding: 24px;
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      background: #fff;
-    }
-    .reason-card strong { display: block; margin: 17px 0 10px; font-size: 1.06rem; line-height: 1.4; }
-    .reason-card p { margin-bottom: 0; color: var(--muted); font-size: .91rem; }
-    .reason-no { color: var(--violet); font-size: .74rem; font-weight: 750; }
+/* ---------- views ---------- */
+.view{display:none}
+.view.active{display:block;animation:vin .5s var(--ease)}
+@keyframes vin{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.blk{padding:88px 0 72px;position:relative}
+.folio{font-family:var(--mono);font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--mint);display:flex;align-items:center;gap:14px;margin-bottom:20px}
+.folio::after{content:'';flex:1;height:1px;background:var(--line-soft)}
+h2{font-size:clamp(26px,3.8vw,40px);font-weight:800;letter-spacing:-.02em;line-height:1.2;margin-bottom:12px}
+h2 .hl{color:var(--mint)}
+.lede{color:var(--muted);font-size:15px;max-width:660px;margin-bottom:40px}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
 
-    .track-grid {
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      gap: 14px;
-    }
-    .track-card {
-      min-height: 178px;
-      padding: 24px;
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      background: #fff;
-    }
-    .track-no { display: block; margin-bottom: 16px; color: var(--violet); font-size: .74rem; font-weight: 750; }
-    .track-card h3 { margin-bottom: 9px; font-size: 1.12rem; }
-    .track-card p { margin-bottom: 0; color: var(--muted); font-size: .89rem; }
-    .track-card p + p { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--line); }
-    .track-card b { display: block; margin-bottom: 3px; color: var(--ink); font-size: .82rem; }
+/* ---------- hero ---------- */
+.hero{min-height:92svh;display:flex;flex-direction:column;justify-content:center;padding:130px 0 0;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(hsla(0,0%,100%,.09) 1px,transparent 1px);background-size:22px 22px;mask-image:radial-gradient(ellipse 90% 70% at 50% 30%,#000 20%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse 90% 70% at 50% 30%,#000 20%,transparent 75%)}
+.orb{position:absolute;border-radius:50%;filter:blur(60px);pointer-events:none}
+.orb-1{width:520px;height:520px;background:rgba(222,188,234,.10);top:-180px;right:-140px}
+.orb-2{width:460px;height:460px;background:rgba(111,36,142,.55);bottom:-200px;left:-160px}
+.hero-inner{position:relative;z-index:2}
+.hero-eyebrow{font-family:var(--mono);font-size:clamp(13px,1.15vw,16px);font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--mint);margin-bottom:24px;display:flex;align-items:center;gap:12px}
+.hero-eyebrow::before{content:'';width:36px;height:1px;background:var(--mint)}
+.hero h1{font-size:clamp(40px,7.6vw,92px);font-weight:900;letter-spacing:-.03em;line-height:1.04;margin-bottom:18px}
+.hero h1 .thin{font-weight:400;color:var(--muted)}
+.hero-desc{color:var(--muted);font-size:16px;max-width:640px;margin-bottom:32px}
+.hero-desc b{color:var(--text);font-weight:600}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;border-radius:999px;padding:14px 28px;font-weight:700;font-size:14px;transition:all .35s var(--ease);cursor:pointer;border:none;font-family:var(--sans)}
+.btn-mint{background:var(--mint);color:var(--navy)}
+.btn-mint:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(222,188,234,.28)}
+.btn-ghost{border:1px solid var(--line);color:var(--text);background:none}
+.btn-ghost:hover{border-color:var(--mint);color:var(--mint)}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:52px}
+.chip{font-family:var(--mono);font-size:11px;letter-spacing:.1em;border:1px solid var(--line);border-radius:999px;padding:8px 16px;display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.02)}
+.chip.hot{border-color:rgba(222,188,234,.45);color:var(--mint)}
+.ledger{border-top:1px solid var(--line);position:relative;z-index:2;background:linear-gradient(180deg,rgba(27,16,33,.55),rgba(27,16,33,.9))}
+.ledger-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:30px 28px 26px;border-left:1px solid var(--line-soft);transition:background .4s var(--ease)}
+.stat:first-child{border-left:none}
+.stat:hover{background:rgba(222,188,234,.04)}
+.stat .num{font-size:clamp(34px,4.2vw,52px);font-weight:800;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
+.stat .num small{font-size:.42em;font-weight:700;color:var(--mint);margin-left:2px}
+.stat .lab{font-weight:600;font-size:14px;margin-top:10px}
+.stat .sub{color:var(--muted);font-size:12px;margin-top:2px}
 
-    .path-grid {
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      gap: 16px;
-    }
-    .path-card {
-      display: flex;
-      flex-direction: column;
-      min-height: 520px;
-      padding: 28px;
-      border: 1px solid rgba(255,255,255,.15);
-      border-radius: 18px;
-      background: rgba(255,255,255,.065);
-    }
-    .path-card:first-child { border-color: rgba(224,170,245,.9); background: rgba(119,45,158,.18); }
-    .path-card.recommended { background: rgba(255,255,255,.065); }
-    .path-topline { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; margin-bottom: 30px; }
-    .path-code { color: #d9a5ed; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; }
-    .path-tag { display: inline-flex; margin: 0; padding: 5px 10px; border: 1px solid rgba(255,255,255,.15); border-radius: 999px; color: #e0aaf5; background: rgba(255,255,255,.04); font-size: .74rem; font-weight: 700; }
-    .path-card h3 { margin-bottom: 10px; font-size: 1.48rem; }
-    .path-card p { margin-bottom: 0; color: rgba(255,255,255,.7); font-size: .93rem; }
-    .path-card-fill { flex: 1; min-height: 92px; }
-    .path-price { display: block; margin: 0 0 12px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.16); color: #fff; font-size: 2.35rem; line-height: 1.15; font-weight: 760; }
-    .path-price small { color: rgba(255,255,255,.68); font-size: .88rem; font-weight: 650; }
-    .path-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      width: fit-content;
-      margin-top: auto;
-      padding-top: 16px;
-      color: #efcbfb;
-      font-size: .9rem;
-      font-weight: 720;
-      text-decoration: none;
-    }
-    .path-link span { transition: transform .2s ease; }
-    .path-link:hover span, .path-link:focus-visible span { transform: translateX(4px); }
-    .path-link:focus-visible { outline: 2px solid #efcbfb; outline-offset: 5px; border-radius: 3px; }
-    #enterprise-pricing, #brand-pricing, #bundle-pricing { scroll-margin-top: 24px; }
+/* ---------- stat wall ---------- */
+.statwall{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+.cell{padding:28px 26px 24px;border-left:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);transition:background .4s var(--ease)}
+.cell:nth-child(3n+1){border-left:none}
+.cell:hover{background:rgba(222,188,234,.04)}
+.cell .num{font-size:clamp(36px,4vw,52px);font-weight:800;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
+.cell .num small{font-size:.4em;color:var(--mint);font-weight:700}
+.cell h4{font-size:14px;font-weight:600;margin:12px 0 4px}
+.cell p{color:var(--muted);font-size:12px;line-height:1.6}
 
-    .pricing-wrap {
-      overflow-x: auto;
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      background: #fff;
-    }
-    table { width: 100%; min-width: 960px; border-collapse: collapse; }
-    th, td {
-      padding: 15px 14px;
-      border-right: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-      text-align: left;
-      vertical-align: top;
-      font-size: .88rem;
-    }
-    th:last-child, td:last-child { border-right: 0; }
-    tr:last-child td { border-bottom: 0; }
-    thead th { color: #fff; background: var(--ink-2); font-weight: 600; }
-    tbody td:first-child { width: 132px; color: var(--muted); font-weight: 650; }
-    .tier-name { display: block; margin-bottom: 5px; }
-    .price { color: #d891f2; font-size: 1.28rem; font-weight: 760; white-space: nowrap; }
-    td.emphasis { background: #faf6fc; }
-    thead th.emphasis { background: #4d265f; }
+/* ---------- model ---------- */
+.model{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+.model svg{width:100%;height:auto;display:block}
+.role{border-top:1px solid var(--line);padding:18px 0;cursor:pointer;transition:padding-left .3s var(--ease)}
+.role:hover{padding-left:8px}
+.role:last-of-type{border-bottom:1px solid var(--line)}
+.role .who{display:flex;align-items:baseline;gap:12px;margin-bottom:4px;flex-wrap:wrap}
+.role .who .k{font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--mint)}
+.role .who h4{font-size:16px;font-weight:700}
+.role .who .go{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--muted)}
+.role:hover .go{color:var(--mint)}
+.role p{color:var(--muted);font-size:13px;line-height:1.6}
 
-    .brand-grid {
-      display: grid;
-      grid-template-columns: repeat(6,1fr);
-      gap: 14px;
-    }
-    .brand-ladder {
-      display: grid;
-      grid-template-columns: repeat(5,1fr);
-      gap: 8px;
-      margin: -8px 0 28px;
-    }
-    .brand-ladder div {
-      position: relative;
-      padding: 15px 14px 14px;
-      border: 1px solid #d9c8e2;
-      border-radius: 12px;
-      background: rgba(255,255,255,.68);
-    }
-    .brand-ladder div::after {
-      content: "";
-      position: absolute;
-      z-index: 2;
-      width: 9px;
-      height: 9px;
-      right: -10px;
-      top: 50%;
-      border-top: 1px solid #a681b8;
-      border-right: 1px solid #a681b8;
-      transform: translateY(-50%) rotate(45deg);
-    }
-    .brand-ladder div:last-child::after { display: none; }
-    .brand-ladder span { display: block; color: var(--violet); font-size: .7rem; font-weight: 760; }
-    .brand-ladder b { display: block; margin: 3px 0 2px; color: var(--ink); font-size: .93rem; }
-    .brand-ladder small { color: var(--muted); font-size: .75rem; }
-    .brand-card {
-      grid-column: span 2;
-      min-height: 338px;
-      padding: 25px;
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      background: #fff;
-    }
-    .brand-card:nth-child(4) { grid-column: 2 / span 2; }
-    .brand-card:nth-child(5) { grid-column: 4 / span 2; }
-    .brand-continuation { margin-top: 14px; }
-    .brand-continuation-head { display: none; }
-    .brand-grid-deep .brand-card:first-child { grid-column: 2 / span 2; }
-    .brand-grid-deep .brand-card:nth-child(2) { grid-column: 4 / span 2; }
-    .brand-card.featured { color: #fff; border-color: var(--ink); background: var(--ink); }
-    .brand-card.premium { color: #fff; border-color: #5a2575; background: linear-gradient(145deg,#55236f,#2d1d36); }
-    .brand-label { color: var(--violet); font-size: .75rem; font-weight: 750; letter-spacing: .06em; text-transform: uppercase; }
-    .featured .brand-label, .premium .brand-label { color: #dca4f3; }
-    .brand-card h3 { margin: 10px 0 5px; font-size: 1.15rem; }
-    .brand-price { margin-bottom: 18px; color: var(--violet); font-size: 1.95rem; line-height: 1.15; font-weight: 760; }
-    .featured .brand-price, .premium .brand-price { color: #e2b2f7; }
-    .value-jump {
-      display: inline-flex;
-      margin: 0 0 12px;
-      padding: 5px 9px;
-      border: 1px solid #d9c8e2;
-      border-radius: 7px;
-      color: var(--ink);
-      background: #fff;
-      font-size: .76rem;
-      font-weight: 700;
-    }
-    .featured .value-jump, .premium .value-jump { color: #fff; border-color: rgba(255,255,255,.2); background: rgba(255,255,255,.08); }
-    .best-for {
-      margin: 0 0 14px;
-      padding: 9px 11px;
-      border-radius: 9px;
-      color: var(--violet);
-      background: #f5edf9;
-      font-size: .82rem;
-      font-weight: 650;
-    }
-    .featured .best-for, .premium .best-for { color: #ead0f6; background: rgba(255,255,255,.09); }
-    .rights { margin: 0; padding: 0; list-style: none; }
-    .rights li { position: relative; padding: 7px 0 7px 18px; color: var(--muted); font-size: .89rem; }
-    .rights li::before { content: ""; position: absolute; left: 0; top: 17px; width: 6px; height: 6px; border-radius: 50%; background: var(--violet-2); }
-    .featured .rights li, .premium .rights li { color: rgba(255,255,255,.76); }
-    .data-note { margin: 20px 0 0; color: var(--muted); font-size: .84rem; text-align: center; }
+/* ---------- four layer strip ---------- */
+.fl{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--card)}
+.fl-i{padding:24px 24px 20px;border-left:1px solid var(--line-soft)}
+.fl-i:first-child{border-left:none}
+.fl-i .ln{font-family:var(--mono);font-size:10px;letter-spacing:.16em;color:var(--mint);margin-bottom:8px}
+.fl-i h4{font-size:15px;font-weight:700;margin-bottom:4px}
+.fl-i p{color:var(--muted);font-size:12px;line-height:1.6}
+</style>
+<style>
+/* ---------- venue ---------- */
+.info-bar{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:40px}
+.floorplan{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:28px;margin-bottom:16px}
+.floorplan svg{width:100%;height:auto;display:block}
+.plan-legend{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);border-radius:16px;overflow:hidden}
+.pl{background:var(--bg);padding:14px 18px;display:flex;gap:12px;align-items:baseline}
+.pl .pl-k{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--navy);background:var(--mint);border-radius:6px;padding:2px 7px;flex-shrink:0}
+.pl .pl-k.dim{background:transparent;border:1px solid rgba(222,188,234,.5);color:var(--mint)}
+.pl b{font-size:13px;font-weight:700}
+.pl span{color:var(--muted);font-size:11.5px}
+/* agenda */
+.agenda{border-top:1px solid var(--line)}
+.ag-row{display:grid;grid-template-columns:150px 1fr;gap:28px;padding:26px 0;border-bottom:1px solid var(--line-soft)}
+.ag-row .d{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--mint);padding-top:4px}
+.ag-row .d small{display:block;color:var(--muted);margin-top:4px;letter-spacing:.04em}
+.ag-row h4{font-size:17px;font-weight:700;margin-bottom:8px}
+.ag-tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{font-size:12px;font-weight:500;border:1px solid var(--line);border-radius:999px;padding:5px 13px;color:var(--muted)}
+.tag.m{color:var(--mint);border-color:rgba(222,188,234,.4)}
+/* mechanism cards */
+.mech{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.m-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 22px 20px;transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
+.m-card:hover{transform:translateY(-4px);box-shadow:0 18px 44px rgba(0,0,0,.45)}
+.m-card .k{font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--mint);margin-bottom:10px}
+.m-card h4{font-size:15px;font-weight:700;margin-bottom:6px}
+.m-card p{color:var(--muted);font-size:12.5px;line-height:1.6}
 
-    .compare-wrap { overflow-x: auto; border: 1px solid rgba(255,255,255,.15); border-radius: 18px; }
-    .compare-wrap table { min-width: 960px; }
-    .compare-wrap th, .compare-wrap td { border-color: rgba(255,255,255,.14); }
-    .compare-wrap th { color: #e0aaf5; background: rgba(255,255,255,.07); }
-    .compare-wrap td { color: rgba(255,255,255,.75); }
-    .compare-wrap td:first-child { color: #fff; font-weight: 650; }
+/* ---------- plans ---------- */
+.track-bar{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:44px}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+.tier{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:30px 28px;display:flex;flex-direction:column;position:relative;transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
+.tier:hover{transform:translateY(-4px);box-shadow:0 18px 44px rgba(0,0,0,.45)}
+.tier.hot{border-color:rgba(222,188,234,.55);background:color-mix(in oklab,#281a2f 82%,#000)}
+.tier .badge{position:absolute;top:-12px;left:28px;font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.14em;color:var(--navy);background:var(--mint);border-radius:999px;padding:4px 12px}
+.tier .tk{font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--mint);margin-bottom:12px}
+.tier h3{font-size:20px;font-weight:800;margin-bottom:4px}
+.tier .price{font-size:26px;font-weight:800;letter-spacing:-.02em;margin:10px 0 4px;font-variant-numeric:tabular-nums}
+.tier .price small{font-size:12px;color:var(--muted);font-weight:500;letter-spacing:0}
+.tier .pd{font-size:11px;color:var(--muted);font-family:var(--mono);margin-bottom:18px}
+.tier ul{list-style:none;flex:1;border-top:1px dashed var(--line-soft);padding-top:16px}
+.tier li{font-size:13px;color:var(--muted);padding:6px 0 6px 20px;position:relative;line-height:1.55}
+.tier li::before{content:'▸';position:absolute;left:0;color:var(--mint);font-family:var(--mono);font-size:11px}
+.tier li b{color:var(--text);font-weight:600}
+.tier .btn{justify-content:center;margin-top:20px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:56px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:32px 30px}
+.panel .pk{font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--mint);margin-bottom:12px}
+.panel h3{font-size:19px;font-weight:800;margin-bottom:8px}
+.panel > p{color:var(--muted);font-size:13px;margin-bottom:20px}
+.steps{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--line-soft)}
+.step{display:flex;gap:16px;padding:14px 0;border-bottom:1px solid var(--line-soft);align-items:baseline}
+.step .sn{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--navy);background:var(--mint);border-radius:999px;min-width:26px;height:26px;display:inline-flex;align-items:center;justify-content:center;transform:translateY(4px)}
+.step b{font-size:14px;font-weight:700}
+.step p{color:var(--muted);font-size:12.5px;margin-top:2px}
+.g-list{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--line-soft)}
+.g-i{padding:14px 0;border-bottom:1px solid var(--line-soft)}
+.g-i b{font-size:14px;font-weight:700;display:block;margin-bottom:2px}
+.g-i p{color:var(--muted);font-size:12.5px}
+.note{margin-top:22px;font-family:var(--mono);font-size:10.5px;color:var(--muted);letter-spacing:.03em;opacity:.85;line-height:1.8}
 
-    .bundle-lead {
-      display: grid;
-      grid-template-columns: 1.1fr .9fr;
-      gap: 24px;
-      align-items: center;
-      padding: 28px 30px;
-      margin-bottom: 20px;
-      border-radius: 18px;
-      color: #fff;
-      background: var(--ink);
-    }
-    .bundle-lead h3 { margin-bottom: 8px; font-size: 1.35rem; }
-    .bundle-lead p { margin-bottom: 0; color: rgba(255,255,255,.7); }
-    .bundle-lead strong { color: #e2aff5; font-size: 1.25rem; text-align: right; }
-    .bundle-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 15px; }
-    .bundle-card {
-      padding: 27px;
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      background: #fff;
-    }
-    .bundle-card.recommended { border: 2px solid var(--violet); box-shadow: 0 18px 38px rgba(83,35,111,.13); }
-    .badge { display: inline-flex; margin-bottom: 17px; padding: 5px 10px; border-radius: 999px; color: #fff; background: var(--violet); font-size: .73rem; font-weight: 700; }
-    .bundle-card h3 { margin-bottom: 8px; font-size: 1.12rem; }
-    .bundle-price { margin-bottom: 9px; color: var(--violet); font-size: 2rem; line-height: 1.15; font-weight: 760; }
-    .original { margin-bottom: 12px; color: var(--muted); font-size: .82rem; }
-    .original s { margin-right: 8px; }
-    .saving { color: var(--green); font-weight: 700; }
-    .bundle-card p:last-child { margin-bottom: 0; color: var(--muted); font-size: .9rem; }
-    .decision-line { margin: 14px 0 0 !important; padding-top: 13px; border-top: 1px solid var(--line); color: var(--ink) !important; font-weight: 700; }
-    .upgrade-route {
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      gap: 14px;
-      margin-top: 22px;
-    }
-    .upgrade-route article {
-      padding: 25px;
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      background: #fff;
-    }
-    .upgrade-route article.outcome { color: #fff; border-color: var(--ink); background: var(--ink); }
-    .route-label { display: block; margin-bottom: 10px; color: var(--violet); font-size: .75rem; font-weight: 760; letter-spacing: .05em; }
-    .upgrade-route .outcome .route-label { color: #dca4f3; }
-    .upgrade-route h3 { margin-bottom: 10px; font-size: 1.08rem; }
-    .upgrade-route ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: .87rem; }
-    .upgrade-route li + li { margin-top: 8px; }
-    .upgrade-route .outcome ul { color: rgba(255,255,255,.76); }
-    .advanced-perks {
-      display: grid;
-      grid-template-columns: .72fr 1.28fr;
-      gap: 28px;
-      align-items: start;
-      padding: 29px;
-      margin-top: 22px;
-      border: 1px solid #d8c2e3;
-      border-radius: 18px;
-      background: #faf6fc;
-    }
-    .advanced-perks h3 { margin-bottom: 8px; font-size: 1.18rem; }
-    .advanced-perks p { margin-bottom: 0; color: var(--muted); font-size: .9rem; }
-    .advanced-perks ul { margin: 0; padding-left: 20px; color: var(--muted); font-size: .9rem; }
-    .advanced-perks li + li { margin-top: 8px; }
+/* ---------- about ---------- */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start}
+.about-intro{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr);gap:28px;align-items:stretch;margin-top:32px}
+.about-copy{background:linear-gradient(145deg,rgba(222,188,234,.09),rgba(222,188,234,.025));border:1px solid var(--line);border-radius:24px;padding:32px}
+.about-copy p{color:var(--muted);font-size:14px;line-height:1.9}
+.about-facts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.about-fact{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.about-fact b{display:block;color:var(--mint);font:700 18px var(--mono);margin-bottom:7px}
+.about-fact span{display:block;color:var(--muted);font-size:11px;line-height:1.6}
+.about-section{margin-top:54px}
+.about-section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:22px}
+.about-section-head h3{font-size:24px;line-height:1.35}
+.about-section-head p{max-width:470px;color:var(--muted);font-size:12.5px;line-height:1.8}
+.founder-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.founder{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:25px 23px}
+.founder .no{font:10px var(--mono);letter-spacing:.18em;color:var(--mint);margin-bottom:14px}
+.founder h4{font-size:18px;margin-bottom:10px}
+.founder p{color:var(--muted);font-size:12px;line-height:1.8}
+.co-method{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:20px}
+.co-step{border-top:1px solid var(--line);padding:16px 13px 5px}
+.co-step b{display:block;color:var(--mint);font:700 18px var(--mono);margin-bottom:8px}
+.co-step strong{display:block;font-size:13px;margin-bottom:5px}
+.co-step span{display:block;color:var(--muted);font-size:11px;line-height:1.6}
+.invite-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.invite-card{border:1px solid var(--line);border-radius:22px;padding:28px;background:var(--card)}
+.invite-card .ik{font:10px var(--mono);letter-spacing:.18em;color:var(--mint);margin-bottom:12px}
+.invite-card h4{font-size:20px;margin-bottom:10px}
+.invite-card p{color:var(--muted);font-size:12.5px;line-height:1.8}
+.invite-card ul{list-style:none;margin-top:17px;border-top:1px solid var(--line-soft);padding-top:12px}
+.invite-card li{position:relative;padding:6px 0 6px 18px;color:var(--muted);font-size:12px;line-height:1.55}
+.invite-card li::before{content:'↗';position:absolute;left:0;color:var(--mint)}
+.invite-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.vision-box{margin-top:18px;border:1px solid rgba(222,188,234,.38);border-radius:26px;padding:34px;background:linear-gradient(135deg,#3b2445,#24172b)}
+.vision-box h3{font-size:24px;margin-bottom:13px}
+.vision-box>p{color:var(--muted);font-size:13px;line-height:1.85;max-width:860px}
+.vision-points{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}
+.vision-point{border-top:1px solid rgba(222,188,234,.24);padding-top:13px;color:#f8effb;font-size:12px;line-height:1.65}
+.vision-sign{margin-top:24px;color:var(--mint);font:10px var(--mono);letter-spacing:.13em}
+.kv{border-top:1px solid var(--line)}
+.kv-i{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--line-soft);font-size:13px}
+.kv-i .kk{font-family:var(--mono);font-size:10px;letter-spacing:.16em;color:var(--muted);text-transform:uppercase;padding-top:3px}
+.kv-i b{font-weight:600}
+.cap-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft)}
+.cap{background:var(--bg);padding:20px 18px 16px}
+.cap .zh{font-size:15px;font-weight:800;display:flex;align-items:baseline;gap:8px}
+.cap .zh i{font-style:normal;font-family:var(--mono);font-size:8.5px;letter-spacing:.16em;color:var(--mint);text-transform:uppercase;font-weight:500}
+.cap p{color:var(--muted);font-size:11px;line-height:1.6;margin-top:6px}
+.contact{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px}
+.contact .row{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px dashed var(--line-soft);font-size:13px;flex-wrap:wrap}
+.contact .row:last-child{border-bottom:none}
+.contact .row .ck{font-family:var(--mono);font-size:10px;letter-spacing:.16em;color:var(--muted);text-transform:uppercase}
+.contact .row b{font-weight:600}
+.contact .row b.soon{color:var(--mint);font-family:var(--mono);font-size:11px;letter-spacing:.06em}
 
-    .support-box {
-      display: grid;
-      grid-template-columns: .8fr 1.2fr;
-      gap: 28px;
-      padding: 30px;
-      margin-top: 20px;
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      background: #fff;
-    }
-    .support-box h3 { margin-bottom: 8px; font-size: 1.2rem; }
-    .support-box p { margin-bottom: 0; color: var(--muted); }
-    .support-list { margin: 0; padding-left: 20px; color: var(--muted); }
-    .support-list li + li { margin-top: 8px; }
-    .supply-grid {
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      gap: 13px;
-      margin-top: 18px;
-    }
-    .supply-card {
-      min-height: 146px;
-      padding: 20px;
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      background: #fff;
-    }
-    .supply-card b { display: block; margin-bottom: 7px; color: var(--ink); }
-    .supply-card p { margin: 0; color: var(--muted); font-size: .86rem; }
-    .product-support-panel {
-      padding: 30px;
-      margin-top: 26px;
-      border: 1px solid #d7c3e1;
-      border-radius: 18px;
-      background: #faf6fc;
-    }
-    .product-support-panel > h3 { margin-bottom: 8px; font-size: 1.3rem; }
-    .product-support-panel > p { max-width: 880px; margin-bottom: 0; color: var(--muted); }
-    .product-support-panel .support-subtitle { margin: 28px 0 8px; font-size: 1.08rem; }
-    .support-value-wrap {
-      overflow-x: auto;
-      margin-top: 22px;
-      border: 1px solid #d9c8e2;
-      border-radius: 14px;
-      background: #fff;
-    }
-    .support-value-wrap table { min-width: 980px; }
-    .support-value-wrap thead th { background: #4d265f; }
-    .support-value-wrap tbody td:first-child { width: 150px; color: var(--ink); }
-    .addon-choice-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 13px; margin-top: 18px; }
-    .addon-choice-grid article { padding: 20px; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
-    .addon-choice-grid b { display: block; margin-bottom: 6px; color: var(--ink); }
-    .addon-choice-grid p { margin: 0; color: var(--muted); font-size: .86rem; }
-    .addon-eligibility {
-      display: grid;
-      grid-template-columns: 150px 1fr;
-      gap: 18px;
-      align-items: center;
-      padding: 22px;
-      border: 1px solid #d9c8e2;
-      border-radius: 14px;
-      background: #fff;
-    }
-    .addon-eligibility span { color: var(--violet); font-weight: 750; }
-    .addon-eligibility strong { font-size: 1.08rem; }
-    .addon-pricing-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 13px; margin-top: 16px; }
-    .addon-pricing-grid article { padding: 22px; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
-    .addon-pricing-grid span { color: var(--violet); font-size: .78rem; font-weight: 750; }
-    .addon-pricing-grid b { display: block; margin: 8px 0 3px; font-size: 1.3rem; }
-    .addon-pricing-grid p { margin: 0; color: var(--muted); }
-    .notes {
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      gap: 20px;
-      padding-top: 28px;
-      margin-top: 34px;
-      border-top: 1px solid var(--line);
-    }
-    .notes b { display: block; margin-bottom: 7px; font-size: .92rem; }
-    .notes p { margin: 0; color: var(--muted); font-size: .83rem; }
-    .closing {
-      position: relative;
-      padding: 34px;
-      margin-top: 34px;
-      border-radius: 20px;
-      color: #fff;
-      background: linear-gradient(135deg,#3a2146,#6d2b8c);
-    }
-    .closing small { display: block; margin-bottom: 10px; color: #dca4f3; font-weight: 750; letter-spacing: .08em; }
-    .closing h3 { max-width: 850px; margin-bottom: 10px; font-size: clamp(1.35rem,2.6vw,2rem); line-height: 1.4; }
-    .closing p { max-width: 800px; margin-bottom: 0; color: rgba(255,255,255,.72); }
-    .closing-footer {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      margin-top: 28px;
-      padding-top: 14px;
-      border-top: 1px solid rgba(255,255,255,.2);
-      color: rgba(255,255,255,.62);
-      font-size: .78rem;
-      letter-spacing: .04em;
-    }
-    footer {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      padding: 24px 5vw;
-      color: rgba(255,255,255,.7);
-      background: var(--ink);
-      font-size: .82rem;
-    }
-    @media (max-width: 900px) {
-      .reason-grid, .track-grid, .path-grid, .supply-grid { grid-template-columns: repeat(2,1fr); }
-      .organizer-grid { grid-template-columns: 1fr 1fr; }
-      .organizer-card:last-child { grid-column: 1 / -1; }
-      .about-method { grid-template-columns: repeat(3,1fr); }
-      .path-card:last-child { grid-column: 1 / -1; }
-      .brand-ladder { grid-template-columns: repeat(3,1fr); }
-      .brand-ladder div::after { display: none; }
-      .brand-grid { grid-template-columns: 1fr 1fr; }
-      .brand-card, .brand-card:nth-child(4), .brand-card:nth-child(5) { grid-column: auto; }
-      .brand-card:last-child { grid-column: 1 / -1; min-height: auto; }
-    }
-    @media (max-width: 760px) {
-      .topbar { padding-inline: 22px; }
-      .topbar .en { display: none; }
-      .hero, section { padding-left: 22px; padding-right: 22px; }
-      .hero { min-height: 440px; padding-top: 76px; }
-      .hero::after { width: 370px; right: -175px; }
-      .section-head, .about-head, .organizer-grid, .about-method, .invite-grid, .vision-banner, .reason-grid, .track-grid, .path-grid, .brand-ladder, .brand-grid, .bundle-lead, .bundle-grid, .upgrade-route, .advanced-perks, .support-box, .supply-grid, .notes { grid-template-columns: 1fr; }
-      .section-head { gap: 16px; }
-      .about-head { gap: 18px; }
-      .about-intro { margin-bottom: 56px; }
-      .organizer-card:last-child { grid-column: auto; }
-      .path-card:last-child, .brand-card, .brand-card:last-child { grid-column: auto; min-height: auto; }
-      .path-card { min-height: 410px; }
-      .bundle-lead strong { text-align: left; }
-      footer { flex-direction: column; padding-inline: 22px; }
-    }
-    @media print {
-      @page { size: A4 landscape; margin: 0; }
-      html, body { width: auto; margin: 0; padding: 0; }
-      body { background: #fff; font-size: 13pt; line-height: 1.54; }
-      h1, h2, h3, strong, .price, .brand-price, .path-price, .tier-name { text-wrap: balance; }
-      p, li, td, th { text-wrap: pretty; }
-      .page { width: 100%; box-shadow: none; }
-      .topbar { display: none !important; }
-      .hero, section, section.dark, section.alt, footer {
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-      }
-      .hero {
-        box-sizing: border-box;
-        min-height: 210mm;
-        padding: 26mm 22mm 18mm;
-        break-after: page;
-        overflow: hidden;
-      }
-      .hero h1 { max-width: 210mm; font-size: 58pt; }
-      .hero-subtitle { font-size: 21pt; }
-      .hero-lead { max-width: 215mm; font-size: 14.5pt; line-height: 1.62; }
-      .event-meta { margin-top: 9mm; gap: 3mm; }
-      .event-meta span { padding: 2.2mm 4.2mm; font-size: 9.5pt; }
-      .hero-footer { left: 22mm; right: 22mm; bottom: 10mm; font-size: 9.5pt; }
-      section {
-        box-sizing: border-box;
-        padding: 11mm 12mm;
-        break-before: page;
-        break-inside: auto;
-      }
-      main > section:nth-of-type(2),
-      main > section:nth-of-type(3),
-      main > section:nth-of-type(4),
-      main > section:nth-of-type(5),
-      main > section:nth-of-type(7) {
-        min-height: 210mm;
-        display: flex;
-        flex-direction: column;
-      }
-      main > section:nth-of-type(2) .reason-grid,
-      main > section:nth-of-type(3) .track-grid,
-      main > section:nth-of-type(4) .path-grid,
-      main > section:nth-of-type(5) .pricing-wrap,
-      main > section:nth-of-type(7) .compare-wrap { flex: 1; }
-      main > section:nth-of-type(2) .reason-grid {
-        grid-template-columns: repeat(2,minmax(0,1fr));
-        grid-template-rows: repeat(2,minmax(0,1fr));
-      }
-      main > section:nth-of-type(2) .reason-card,
-      main > section:nth-of-type(3) .track-card,
-      main > section:nth-of-type(4) .path-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-      main > section:nth-of-type(4) .path-card {
-        position: relative;
-        justify-content: flex-end;
-        overflow: hidden;
-      }
-      main > section:nth-of-type(4) .path-card::before {
-        position: absolute;
-        top: 6mm;
-        right: 7mm;
-        color: rgba(255,255,255,.09);
-        font-family: Georgia, serif;
-        font-size: 62pt;
-        line-height: 1;
-        font-weight: 700;
-      }
-      main > section:nth-of-type(4) .path-card:nth-child(1)::before { content: "01"; }
-      main > section:nth-of-type(4) .path-card:nth-child(2)::before { content: "02"; }
-      main > section:nth-of-type(4) .path-card:nth-child(3)::before { content: "03"; }
-      main > section:nth-of-type(5) .pricing-wrap { display: flex; }
-      main > section:nth-of-type(5) table,
-      main > section:nth-of-type(7) table { height: 100%; }
-      .section-head {
-        grid-template-columns: minmax(0,1.15fr) minmax(82mm,.72fr);
-        gap: 10mm;
-        margin-bottom: 7mm;
-        break-after: avoid;
-      }
-      .section-head h2 { font-size: 31pt; line-height: 1.15; }
-      .section-head .summary { font-size: 12.5pt; line-height: 1.55; }
-      .eyebrow { margin-bottom: 3.2mm; font-size: 9.5pt; }
-      .reason-grid { grid-template-columns: repeat(4,minmax(0,1fr)); gap: 4mm; }
-      .track-grid { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 4mm; }
-      .path-grid, .bundle-grid, .upgrade-route, .supply-grid, .notes { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 4mm; }
-      .reason-card, .track-card, .path-card { min-height: 0; padding: 5.2mm; }
-      .reason-card strong { margin: 3.2mm 0 2mm; font-size: 14pt; }
-      .reason-card p, .track-card p { font-size: 12pt; }
-      .track-card h3 { font-size: 15.5pt; }
-      .track-no, .reason-no { font-size: 9.3pt; }
-      main > section:nth-of-type(4) .path-grid {
-        grid-template-columns: repeat(3,minmax(0,1fr));
-        grid-template-rows: 1fr;
-        gap: 5mm;
-      }
-      main > section:nth-of-type(4) .path-card {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto 1fr;
-        align-items: start;
-        gap: 0;
-        padding: 8mm;
-      }
-      main > section:nth-of-type(4) .path-card::before {
-        display: block;
-        top: 7mm;
-        right: 7mm;
-        font-size: 48pt;
-      }
-      main > section:nth-of-type(4) .path-tag { margin: 0 0 14mm; font-size: 11pt; }
-      main > section:nth-of-type(4) .path-card h3 { margin: 0 0 4mm; font-size: 21pt; }
-      main > section:nth-of-type(4) .path-price { margin: 0 0 7mm; font-size: 27pt; white-space: nowrap; }
-      main > section:nth-of-type(4) .path-card p { margin: 0; font-size: 12pt; line-height: 1.65; }
-      .brand-grid { grid-template-columns: repeat(6,minmax(0,1fr)); gap: 4mm; }
-      .brand-card, .brand-card:nth-child(4), .brand-card:nth-child(5) { grid-column: span 2; min-height: 0; padding: 5.5mm; }
-      .brand-card:nth-child(4) { grid-column: 2 / span 2; }
-      .brand-card:nth-child(5) { grid-column: 4 / span 2; }
-      .brand-card h3 { font-size: 14pt; }
-      .brand-price { font-size: 24pt; }
-      .brand-label { font-size: 9pt; }
-      .best-for, .value-jump { font-size: 11pt; }
-      .rights li { padding: 1.7mm 0 1.7mm 4.5mm; font-size: 11pt; }
-      .rights li::before { top: 4.1mm; }
-      main > section:nth-of-type(6) > .section-head { margin-bottom: 4mm; }
-      .brand-ladder { grid-template-columns: repeat(5,minmax(0,1fr)); gap: 2.5mm; margin-bottom: 4mm; }
-      .brand-ladder div { padding: 2.4mm 3mm; }
-      .brand-ladder span { font-size: 8.5pt; }
-      .brand-ladder b { font-size: 11pt; }
-      .brand-ladder small { font-size: 9pt; }
-      .brand-ladder div::after { display: none; }
-      .brand-grid-primary {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3,38mm);
-        gap: 2.5mm;
-      }
-      .brand-grid-primary .brand-card {
-        grid-column: auto;
-        display: grid;
-        grid-template-columns: 52mm 63mm minmax(0,1fr);
-        grid-template-rows: auto auto 1fr;
-        column-gap: 4mm;
-        row-gap: .8mm;
-        align-items: start;
-        min-height: 0;
-        padding: 2.8mm 4mm;
-      }
-      .brand-grid-primary .brand-label { grid-column: 1; grid-row: 1; }
-      .brand-grid-primary h3 { grid-column: 1; grid-row: 2; margin: 0; font-size: 15pt; line-height: 1.18; }
-      .brand-grid-primary .brand-price { grid-column: 1; grid-row: 3; margin: 0; font-size: 22pt; line-height: 1.05; white-space: nowrap; }
-      .brand-grid-primary .value-jump { grid-column: 2; grid-row: 1; margin: 0; align-self: start; }
-      .brand-grid-primary .best-for { grid-column: 2; grid-row: 2 / span 2; margin: 0; padding: 2mm 2.5mm; font-size: 10.5pt; line-height: 1.35; }
-      .brand-grid-primary .rights {
-        grid-column: 3;
-        grid-row: 1 / span 3;
-        display: grid;
-        grid-template-columns: repeat(2,minmax(0,1fr));
-        column-gap: 5mm;
-        align-content: start;
-        padding-top: 0;
-      }
-      .brand-grid-primary .rights li { padding-top: .6mm; padding-bottom: .6mm; font-size: 10.2pt; line-height: 1.32; }
-      .brand-grid-primary .rights li::before { top: 2.8mm; }
-      .brand-continuation {
-        min-height: 188mm;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0;
-        break-before: page;
-      }
-      .brand-continuation-head {
-        display: grid;
-        grid-template-columns: minmax(0,1.15fr) minmax(82mm,.72fr);
-        gap: 10mm;
-        align-items: end;
-        margin-bottom: 7mm;
-      }
-      .brand-continuation-head h2 { margin: 0; font-size: 31pt; line-height: 1.15; }
-      .brand-continuation-head .summary { margin: 0; color: var(--muted); font-size: 12pt; }
-      .brand-grid-deep {
-        flex: 1;
-        grid-template-columns: repeat(2,minmax(0,1fr));
-        align-items: stretch;
-      }
-      .brand-grid-deep .brand-card,
-      .brand-grid-deep .brand-card:first-child,
-      .brand-grid-deep .brand-card:nth-child(2) {
-        grid-column: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding: 8mm;
-      }
-      .reason-card, .track-card, .path-card, .brand-card, .bundle-card, .upgrade-route article, .advanced-perks, .support-box, .supply-card, .closing { break-inside: avoid; }
-      .product-support-panel { break-inside: auto; }
-      .pricing-wrap, .compare-wrap, .support-value-wrap { overflow: visible; }
-      table, .compare-wrap table, .support-value-wrap table { min-width: 0; }
-      thead { display: table-header-group; }
-      tr { break-inside: avoid; }
-      th, td { padding: 3mm 2.8mm; font-size: 11.2pt; line-height: 1.4; }
-      tbody td:first-child { width: 31mm; }
-      .tier-name { font-size: 9pt; }
-      .price { font-size: 13pt; }
-      .compare-wrap th, .compare-wrap td { font-size: 12pt; padding: 4.3mm; }
-      .product-support-panel {
-        min-height: 188mm;
-        margin: 0;
-        padding: 9mm 8mm;
-        border: 0;
-        background: transparent;
-        break-before: page;
-      }
-      .product-support-panel > h3 { font-size: 27pt; }
-      .product-support-panel > p, .support-box p, .support-list { font-size: 10.5pt; }
-      .support-box + .support-subtitle {
-        padding-top: 20mm;
-        margin: 0 0 8mm;
-        font-size: 27pt;
-        line-height: 1.2;
-        break-before: page;
-      }
-      .addon-pricing-grid + .data-note {
-        margin-top: 7mm;
-        padding: 5mm 6mm;
-        border: 1px solid #d9c8e2;
-        border-radius: 4mm;
-        background: #fff;
-        text-align: left;
-      }
-      .addon-eligibility {
-        grid-template-columns: 42mm minmax(0,1fr);
-        gap: 7mm;
-        padding: 6mm 7mm;
-      }
-      .addon-eligibility span { font-size: 11pt; }
-      .addon-eligibility strong { font-size: 14pt; }
-      .addon-pricing-grid { gap: 5mm; margin-top: 6mm; }
-      .addon-pricing-grid article { min-height: 58mm; padding: 7mm; }
-      .addon-pricing-grid span { font-size: 10pt; }
-      .addon-pricing-grid b { margin: 3mm 0 1.5mm; font-size: 20pt; }
-      .addon-pricing-grid p { font-size: 12pt; }
-      .addon-choice-grid { gap: 5mm; margin-top: 7mm; }
-      .addon-choice-grid article { min-height: 48mm; padding: 6mm; }
-      .addon-choice-grid b { font-size: 13pt; }
-      .addon-choice-grid p { font-size: 10.8pt; line-height: 1.55; }
-      .supply-card { min-height: 0; padding: 4.5mm; }
-      .supply-card p { font-size: 10pt; }
-      .bundle-lead { padding: 6mm 7mm; }
-      .bundle-lead h3 { font-size: 15pt; }
-      .bundle-lead p { font-size: 10.8pt; }
-      .bundle-lead strong { font-size: 14pt; }
-      .bundle-card, .upgrade-route article, .advanced-perks, .closing { padding: 5.5mm; }
-      .bundle-card h3, .upgrade-route h3, .advanced-perks h3 { font-size: 12pt; }
-      .bundle-price { font-size: 22pt; }
-      .bundle-card p:last-child, .upgrade-route ul, .advanced-perks p, .advanced-perks ul { font-size: 11pt; }
-      .support-box { padding: 6mm; }
-      .notes {
-        min-height: 150mm;
-        align-content: center;
-        gap: 6mm;
-        padding: 17mm 0 7mm;
-        margin-top: 0;
-        border-top: 0;
-        break-before: page;
-      }
-      .notes::before {
-        content: "产品赞助合作 · 合作说明";
-        grid-column: 1 / -1;
-        color: var(--ink);
-        font-size: 25pt;
-        line-height: 1.2;
-        font-weight: 650;
-        letter-spacing: -.03em;
-      }
-      .notes > div {
-        min-height: 65mm;
-        padding: 7mm;
-        border: 1px solid var(--line);
-        border-radius: 5mm;
-        background: #fff;
-      }
-      .notes b { font-size: 12pt; }
-      .notes p { font-size: 10.8pt; }
-      .data-note { font-size: 10pt; }
-      .notes + .data-note {
-        margin: 0;
-        padding: 5mm 6mm;
-        border: 1px solid #d9c8e2;
-        border-radius: 4mm;
-        background: #fff;
-        text-align: left;
-      }
-      .closing {
-        min-height: 210mm;
-        margin: 0 -12mm -11mm;
-        padding: 24mm;
-        border-radius: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        break-before: page;
-      }
-      .closing small { font-size: 11pt; }
-      .closing h3 { max-width: 230mm; font-size: 32pt; line-height: 1.35; }
-      .closing p { max-width: 205mm; font-size: 14pt; }
-      .closing-footer {
-        position: absolute;
-        left: 24mm;
-        right: 24mm;
-        bottom: 10mm;
-        margin: 0;
-        padding-top: 4mm;
-        font-size: 10pt;
-      }
-      section.alt + section.dark { break-before: page; }
-      footer { display: none !important; }
-    }
-  </style>
+/* ---------- shared banner/footer ---------- */
+.cta{padding:0 0 80px}
+.cta-box{border-radius:36px;padding:60px 48px;text-align:center;position:relative;overflow:hidden;background:linear-gradient(135deg,#40244a 0%,#281a2f 55%,#1b1021 100%);border:1px solid rgba(222,188,234,.3)}
+.cta-box::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(222,188,234,.16) 1px,transparent 1px);background-size:22px 22px;mask-image:radial-gradient(ellipse 80% 80% at 50% 0%,#000,transparent 70%);-webkit-mask-image:radial-gradient(ellipse 80% 80% at 50% 0%,#000,transparent 70%)}
+.cta-box > *{position:relative}
+.cta-box .k{font-family:var(--mono);font-size:11px;letter-spacing:.3em;color:var(--mint);text-transform:uppercase;margin-bottom:16px}
+.cta-box h2{margin-bottom:12px}
+.cta-box p{color:var(--muted);max-width:520px;margin:0 auto 28px;font-size:14px}
+.cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+footer{border-top:1px solid var(--line-soft);padding:32px 0 40px}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:flex-start}
+.foot .fm{font-family:var(--mono);font-size:10px;letter-spacing:.16em;color:var(--muted);text-transform:uppercase;line-height:2}
+.foot .fl-links{display:flex;gap:20px;font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+.foot .fl-links a{color:var(--muted);text-decoration:none;cursor:pointer}
+.foot .fl-links a:hover{color:var(--mint)}
+
+/* ---------- responsive ---------- */
+@media(max-width:960px){
+  .ledger-grid,.fl,.mech{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(3),.fl-i:nth-child(3){border-left:none}
+  .stat,.fl-i{border-top:1px solid var(--line-soft)}
+  .stat:nth-child(-n+2),.fl-i:nth-child(-n+2){border-top:none}
+  .statwall{grid-template-columns:repeat(2,1fr)}
+  .cell:nth-child(3n+1){border-left:1px solid var(--line-soft)}
+  .cell:nth-child(odd){border-left:none}
+  .model,.about-grid,.duo{grid-template-columns:1fr;gap:32px}
+  .about-intro{grid-template-columns:1fr}.founder-grid{grid-template-columns:1fr}.co-method{grid-template-columns:repeat(2,1fr)}
+  .vision-points{grid-template-columns:1fr}
+  .tiers{grid-template-columns:1fr}
+  .tier.hot{order:-1}
+  .plan-legend{grid-template-columns:repeat(2,1fr)}
+  .cap-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+  .blk{padding:56px 0 48px}
+  .ledger-grid,.statwall,.fl,.mech,.cap-grid,.plan-legend{grid-template-columns:1fr}
+  .stat,.fl-i,.cell{border-left:none !important;border-top:1px solid var(--line-soft)}
+  .stat:first-child,.fl-i:first-child{border-top:none}
+  .cta-box{padding:44px 24px}
+  .topbar-in{padding:0 16px;gap:12px}
+  .top-cta{display:none}
+  .ag-row{grid-template-columns:1fr;gap:8px}
+  .about-copy{padding:24px}.about-facts,.invite-grid,.co-method{grid-template-columns:1fr}.about-section-head{display:block}.about-section-head p{margin-top:10px}.vision-box{padding:26px 22px}
+}
+</style>
 </head>
 <body>
-  <main class="page">
-    <header class="topbar">
-      <div class="brand"><span class="brand-mark">R</span><span>认知半径 · FDT·X Lab</span></div>
-      <span class="en">THE RADIUS</span>
-    </header>
 
-    <section class="hero">
-      <p class="eyebrow">2026 YEAR-END CO-CREATION EVENT</p>
-      <h1>FDT·X Lab</h1>
-      <p class="hero-subtitle">年底共创赛事 · 企业合作方案</p>
-      <p class="hero-lead">三天之内，让来自六大赛道的跨专业英才围绕企业真实需求展开协作，把一场赛事合作转化为经济、创新、组织变革与品牌社会影响四类可继续使用的企业价值。</p>
-      <div class="event-meta">
-        <span>2026.12.17—12.19 · 杭州</span>
-        <span>1,000 名参赛英才</span>
-        <span>六大赛道</span>
-        <span>20+ 家出题企业</span>
-      </div>
-      <div class="hero-footer"><span>认知半径 · FDT·X Lab</span><span>THE RADIUS</span></div>
-    </section>
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="wordmark" data-go="home">FDT<span class="x">·X</span> Lab</a>
+    <nav class="tabs">
+      <button class="tab on" data-go="home">首页</button>
+      <button class="tab" data-go="venue">大会现场</button>
+      <button class="tab" data-go="plans">合作方案</button>
+      <button class="tab" data-go="about">关于我们</button>
+    </nav>
+    <button class="top-cta" data-go="plans">成为课题发起方 →</button>
+  </div>
+</header>
 
-    <section>
-      <div class="about-intro">
-        <div class="about-head">
-          <div><p class="eyebrow">ABOUT · FDT·X LAB</p><h2>让真实课题成为<br>人才与企业共同成长的起点</h2></div>
-          <p class="about-lead">AI 正在改变产业、岗位与组织协作方式。企业需要新的解题思路，也需要能够理解业务、运用技术、推动协作并承担结果的人才。FDT·X Lab 把企业真实课题带入共创现场，让能力在行动中被看见，让有价值的方案走向后续合作。</p>
-        </div>
-        <div class="about-meta">
-          <span>2026.12.17—12.19</span><span>杭州</span><span>约 1,000 名跨专业参赛者</span><span>20+ 家企业真实课题</span><span>72 小时集中共创</span>
-        </div>
-        <div class="organizer-grid">
-          <article class="organizer-card"><span>CO-FOUNDER 01</span><h3>认知半径 TheRadius</h3><p>聚焦商业与科技、连接全球华人女性的可信支持社区，帮助女性发现天赋、建立专业信用，并将个人优势转化为事业成果、商业合作与社会影响力。</p></article>
-          <article class="organizer-card"><span>CO-FOUNDER 02</span><h3>早早早大学生圈</h3><p>专注大学生职业发展与长期成长，倡导“早认知、早行动、早成就”，通过行业认知、企业访学、真实项目、实战训练与长期陪跑，帮助青年更早进入真实实践。</p></article>
-          <article class="organizer-card"><span>CO-FOUNDER 03</span><h3>智耀魔方</h3><p>专注企业组织与人才战略，拥有 20 余年专业积淀和丰富的 500 强企业服务实践，覆盖组织与人才体系、HR 转型、数字化产品及运营落地。</p></article>
-        </div>
-        <div class="about-method" aria-label="赛事共创方式">
-          <div><small>STEP 01</small><b>企业提出真实业务课题</b></div>
-          <div><small>STEP 02</small><b>跨专业人才组队进入现场</b></div>
-          <div><small>STEP 03</small><b>结合 AI 开展 72 小时共创</b></div>
-          <div><small>STEP 04</small><b>形成方案、原型与成果展示</b></div>
-          <div><small>STEP 05</small><b>推动招聘、项目与创业合作</b></div>
-        </div>
-        <div class="invite-grid">
-          <article class="invite-card"><h3>我们邀请这样的企业</h3><p>拥有真实业务问题、正在探索新增长与新场景，或希望通过真实任务发现人才、验证方案、连接顾问与创新伙伴的企业和机构。</p></article>
-          <article class="invite-card"><h3>我们邀请这样的人才</h3><p>来自不同专业与行业、愿意理解业务并承担结果的青年、女性、AI 原生人才、专业人士与创业者，在协作中展现判断力、创造力与推进能力。</p></article>
-        </div>
-        <div class="vision-banner"><span>OUR SHARED VISION</span><p>让每个人更早发现自己的优势，让能力在真实实践中被看见，让企业找到适合共同前行的人；并以长期共创平台连接高校、女性社区、专业人才、企业与行业伙伴。</p></div>
-      </div>
-      <div class="section-head">
-        <div><p class="eyebrow">01 · Four Enterprise Values</p><h2>四重价值<br>让一次投入产生持续回报</h2></div>
-        <p class="summary">企业可在同一个真实协作现场，联动经营问题、创新探索、人才发现与社会影响，形成可持续复用的综合价值。</p>
-      </div>
-      <div class="reason-grid">
-        <article class="reason-card"><span class="reason-no">01 · 经济价值</span><strong>用一笔投入，降低多项业务探索成本</strong><p>把方案比选、产品反馈、人才观察与品牌触达放在同一现场，更早识别值得继续投入的方向，减少分散采购和重复试错。</p></article>
-        <article class="reason-card"><span class="reason-no">02 · 业务增长与创新价值</span><strong>从真实问题中寻找产品、市场与增长的新路径</strong><p>汇集跨行业、跨专业视角，形成可比较的产品方案、用户策略、市场机会或商业模式，为企业下一步验证和投入提供新选择。</p></article>
-        <article class="reason-card"><span class="reason-no">03 · 组织变革价值</span><strong>重新验证企业的人才边界与协作机制</strong><p>让内部业务团队与外部专家、AI 原生人才、OPC 及跨界协作者围绕同一目标协作，探索项目制、柔性组织和开放式创新的新组织方式。</p></article>
-        <article class="reason-card"><span class="reason-no">04 · 品牌曝光与社会价值</span><strong>在精准创新场域中完成一次高浓度品牌表达</strong><p>品牌在人才、企业与行业关注者聚集的赛事中，通过展示、体验和真实行动被持续看见，把创新、开放与社会担当转化为品牌声誉和美誉度。</p></article>
-      </div>
-    </section>
+<!-- ==================== VIEW · HOME ==================== -->
+<main class="view active" id="view-home">
 
-    <section class="alt">
-      <div class="section-head">
-        <div><p class="eyebrow">02 · Six Challenge Tracks</p><h2>六大赛道，面向六类创新企业</h2></div>
-        <p class="summary">每个赛道首先对应一类重点合作企业，再由企业的真实问题决定具体课题方向。课题可以在赛道内延展，也可以跨赛道协作。</p>
+  <section class="hero">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="wrap hero-inner">
+      <div class="hero-eyebrow reveal">FDT·X LAB · 72H 未来组织实验室</div>
+      <h1 class="reveal">真实课题 · 真实能力<br><span class="thin">真实合作</span></h1>
+      <p class="hero-desc reveal">
+        一场千人线下创新大会：以 <b>20+ 企业真实经营课题</b> 为榜单，<b>1000 名参赛人才</b> 揭榜组队、72 小时攻坚，
+        赛后一年持续跟踪——企业在这里验证方向、识别人才，青年人才在这里被看见。
+      </p>
+      <div class="hero-cta reveal">
+        <a class="btn btn-mint" data-go="plans">企业：成为课题发起方 →</a>
+        <a class="btn btn-mint" href="signup.html">青年人才：报名参赛 →</a>
       </div>
-      <div class="track-grid">
-        <article class="track-card"><span class="track-no">TRACK 01</span><h3>AI 与硬科技</h3><p><b>重点企业</b>大模型、AI 软件与平台、机器人、智能硬件、半导体及技术型创业企业</p><p><b>典型课题</b>如何把核心技术转化为可验证的行业应用与商业增长</p></article>
-        <article class="track-card"><span class="track-no">TRACK 02</span><h3>消费与品牌</h3><p><b>重点企业</b>消费品牌、零售平台、电商、生活方式服务及品牌服务企业</p><p><b>典型课题</b>如何找到新用户、新场景或渠道增长的第二曲线</p></article>
-        <article class="track-card"><span class="track-no">TRACK 03</span><h3>医疗与健康</h3><p><b>重点企业</b>生物医药、医疗器械、数字医疗、健康管理、银发与康养企业</p><p><b>典型课题</b>如何优化产品商业化、患者服务与健康服务体验</p></article>
-        <article class="track-card"><span class="track-no">TRACK 04</span><h3>先进制造</h3><p><b>重点企业</b>工业制造、智能装备、工业软件、供应链、新能源及绿色科技企业</p><p><b>典型课题</b>如何利用 AI 与数字化提升研发、生产、质量及供应链效率</p></article>
-        <article class="track-card"><span class="track-no">TRACK 05</span><h3>金融与投资</h3><p><b>重点企业</b>银行、保险、证券、基金、投资机构、产业资本及金融科技企业</p><p><b>典型课题</b>如何提升投研、风险控制、资产服务与产业协同能力</p></article>
-        <article class="track-card"><span class="track-no">TRACK 06</span><h3>专业服务</h3><p><b>重点企业</b>咨询、法律、人力资源、财税、知识服务及综合企业服务机构</p><p><b>典型课题</b>如何重构服务产品，并通过 AI 提升专业交付效率</p></article>
+      <div class="hero-meta reveal">
+        <span class="chip hot">杭州 · 2026.12.17 — 12.19 · 线下三日</span>
+        <span class="chip">面向全国招募</span>
+        <span class="chip">揭榜制 · 液态组队</span>
       </div>
-    </section>
-
-    <section class="dark" id="partnership-paths">
-      <div class="section-head">
-        <div><p class="eyebrow">03 · Partnership Paths</p><h2>让一次参与，<br>同时产生业务与品牌价值</h2><p class="path-code">2026 YEAR-END CO-CREATION EVENT · HANGZHOU</p></div>
-        <p class="summary">围绕企业真实需求、品牌场景与影响力目标，选择一条更接近当前任务的合作路径。</p>
-      </div>
-      <div class="path-grid">
-        <article class="path-card"><div class="path-topline"><span class="path-code">01 · BUSINESS VALUE</span><span class="path-tag">真实课题驱动</span></div><h3>课题共创</h3><p>把经营问题带进赛场，获得多元解法与人才连接。</p><div class="path-card-fill"></div><span class="path-price">¥49,800 <small>起</small></span><a class="path-link" href="#enterprise-pricing">查看权益 <span aria-hidden="true">→</span></a></article>
-        <article class="path-card"><div class="path-topline"><span class="path-code">02 · BRAND VALUE</span><span class="path-tag">场景触达</span></div><h3>品牌场景合作</h3><p>从信息触达走向体验、内容与现场关系。</p><div class="path-card-fill"></div><span class="path-price">¥9,800 <small>起</small></span><a class="path-link" href="#brand-pricing">查看权益 <span aria-hidden="true">→</span></a></article>
-        <article class="path-card recommended"><div class="path-topline"><span class="path-code">03 · INTEGRATED VALUE</span><span class="path-tag">重点推荐</span></div><h3>影响力共创</h3><p>让品牌表达建立在真实业务行动之上。</p><div class="path-card-fill"></div><span class="path-price">¥79,800 <small>起</small></span><a class="path-link" href="#bundle-pricing">查看组合 <span aria-hidden="true">→</span></a></article>
-      </div>
-    </section>
-
-    <section id="enterprise-pricing">
-      <div class="section-head">
-        <div><p class="eyebrow">04 · Enterprise Co-Creation</p><h2>参赛企业合作报价</h2></div>
-        <p class="summary">适合拥有真实业务课题，并希望同时获得多元方案、人才判断与企业专业形象传播的企业。</p>
-      </div>
-      <div class="pricing-wrap" role="region" aria-label="参赛企业合作报价表" tabindex="0">
-        <table>
-          <thead><tr>
-            <th>权益项目</th>
-            <th><span class="tier-name">业务创新伙伴</span><span class="price">49,800 元</span></th>
-            <th class="emphasis"><span class="tier-name">深度共创伙伴</span><span class="price">98,000 元</span></th>
-            <th><span class="tier-name">赛道共创伙伴</span><span class="price">198,000 元</span></th>
-            <th><span class="tier-name">大会核心伙伴</span><span class="price">398,000 元</span></th>
-          </tr></thead>
-          <tbody>
-            <tr><td>适合企业</td><td>首次参与<br>已有 1 个明确问题</td><td class="emphasis">重点业务课题<br>需要更深沟通与年度传播</td><td>希望定义赛道议题<br>建立行业影响力</td><td>多课题参与<br>大会级核心合作</td></tr>
-            <tr><td>课题共创</td><td>1 个标准课题</td><td class="emphasis">1 个深度课题</td><td>1 个深度课题</td><td>3 个深度课题</td></tr>
-            <tr><td>需求与评议</td><td>基础梳理<br>驻场评委评分</td><td class="emphasis">精细梳理、中期交流<br>驻场评分与嘉宾评议</td><td>精细梳理、中期交流<br>驻场评分与嘉宾评议</td><td>系统化梳理、中期交流<br>驻场评分与嘉宾评议</td></tr>
-            <tr><td>现场品牌展示</td><td>课题介绍、伙伴区<br>标准展示位</td><td class="emphasis">企业介绍、品牌墙伙伴区<br>视频轮播与企业展示位</td><td>赛道主题展示、品牌墙赛道区<br>赛道展示位与视频呈现</td><td>主背景核心标识、品牌墙核心区<br>核心展示位与暖场呈现</td></tr>
-            <tr><td>签约与舞台</td><td>课题签约</td><td class="emphasis">企业专题签约</td><td>赛道集中签约<br>赛道议题环节</td><td>主舞台重点签约<br>分享与颁奖参与</td></tr>
-            <tr><td>议题与人才标准</td><td>—</td><td class="emphasis">—</td><td>1 条赛道共建</td><td>1 条赛道共建<br>大会主题与跨赛道交流</td></tr>
-            <tr><td>年度品牌展示</td><td>不含</td><td class="emphasis">12 个月</td><td>12 个月</td><td>12 个月</td></tr>
-            <tr><td>年度信息发布</td><td>不含</td><td class="emphasis">4 次</td><td>6 次</td><td>12 次<br>结合重点推荐资源</td></tr>
-            <tr><td>共建回访</td><td>不含</td><td class="emphasis">无固定回访</td><td>一年 2 次</td><td>一年 4 次</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="alt" id="brand-pricing">
-      <div class="section-head">
-        <div><p class="eyebrow">05 · Brand Partnership</p><h2>品牌影响力合作报价</h2></div>
-        <p class="summary">合作深度沿着“信息触达—驻场沟通—产品体验—场景共创—赛事联合”逐级提升，企业可根据参与深度与传播目标灵活选择。</p>
-      </div>
-      <div class="brand-ladder" aria-label="品牌合作五级价值进阶">
-        <div><span>LEVEL 01</span><b>信息触达</b><small>形成基础品牌认知</small></div>
-        <div><span>LEVEL 02</span><b>驻场沟通</b><small>拥有固定交流阵地</small></div>
-        <div><span>LEVEL 03</span><b>产品体验</b><small>获得互动设计与反馈</small></div>
-        <div><span>LEVEL 04</span><b>场景共创</b><small>获得场景命名与内容传播</small></div>
-        <div><span>LEVEL 05</span><b>赛事联合</b><small>共建赛事重点模块</small></div>
-      </div>
-      <div class="brand-grid brand-grid-primary">
-        <article class="brand-card"><span class="brand-label">01 · 信息触达</span><h3>品牌陈列位</h3><div class="brand-price">9,800 元</div><span class="value-jump">品牌资料进入现场触点</span><p class="best-for">适合以轻量方式进入赛事现场，完成基础品牌认知与信息引导。</p><ul class="rights"><li>1 个立式品牌介绍画面或资料架</li><li>企业简介、产品信息及二维码陈列</li><li>进入现场品牌合作名录</li><li>合作范围聚焦静态信息陈列</li></ul></article>
-        <article class="brand-card"><span class="brand-label">02 · 驻场沟通</span><h3>标准品牌展位</h3><div class="brand-price">16,800 元</div><span class="value-jump">建立稳定的现场沟通阵地</span><p class="best-for">适合安排团队驻场，开展品牌介绍、客户接待与商务交流。</p><ul class="rights"><li>1 个小型标准展位及基础品牌画面</li><li>企业介绍、产品样品及宣传资料陈列</li><li>可安排人员驻场接待与交流</li><li>进入现场品牌合作名录及展位导览</li><li>提供标准现场照片素材</li></ul></article>
-        <article class="brand-card"><span class="brand-label">03 · 产品体验</span><h3>产品互动展位</h3><div class="brand-price">29,800 元</div><span class="value-jump">互动设计 + 体验执行 + 数据反馈</span><p class="best-for">适合希望通过真实试用提升产品认知，并验证现场人群反馈的企业。</p><ul class="rights"><li>1 个产品互动型展位及体验操作空间</li><li>赛前共创 1 套轻量互动机制，可选择演示、试用、派样、打卡或小测试</li><li>现场导览标注及互动参与提示</li><li>官方赛事渠道发布 1 次产品体验预告</li><li>提供现场影像素材及扫码量、参与量、领取量等汇总数据</li></ul></article>
-      </div>
-      <div class="brand-continuation">
-        <div class="brand-continuation-head">
-          <div><p class="eyebrow">05B · Advanced Brand Partnership</p><h2>品牌影响力合作 · 深度合作</h2></div>
-          <p class="summary">从主题场景到赛事联合，让品牌从“被看见”进一步进入赛事体验、重点内容与完整传播链路。</p>
+    </div>
+    <div class="ledger">
+      <div class="wrap">
+        <div class="ledger-grid">
+          <div class="stat reveal"><div class="num"><span data-count="1000" data-comma="1">0</span></div><div class="lab">名参赛人才</div><div class="sub">学生 · 青年创业者 · 全国招募</div></div>
+          <div class="stat reveal"><div class="num"><span data-count="20">0</span><small>+</small></div><div class="lab">家企业真实课题</div><div class="sub">经营痛点 · 榜单发布</div></div>
+          <div class="stat reveal"><div class="num"><span data-count="72">0</span><small>h</small></div><div class="lab">线下揭榜攻坚</div><div class="sub">快速验证与匹配</div></div>
+          <div class="stat reveal"><div class="num"><span data-count="1">0</span><small>年</small></div><div class="lab">赛后持续跟踪</div><div class="sub">合作履约 · 成长复盘</div></div>
         </div>
-        <div class="brand-grid brand-grid-deep">
-        <article class="brand-card featured"><span class="brand-label">04 · 场景共创</span><h3>主题品牌体验区</h3><div class="brand-price">49,800 元</div><span class="value-jump">场景命名 + 联合策划 + 主题传播</span><p class="best-for">适合将产品或服务融入赛事高频使用情境，持续建立品牌感知。</p><ul class="rights"><li>共创并命名 1 个主题体验场景，如“品牌 × FDT·X Lab 充电补给站”</li><li>平台参与体验动线、品牌信息及互动触点策划</li><li>主题区域、会场导视及官方活动指南重点呈现</li><li>官方赛事账号发布 1 次主题场景介绍，图文、海报或短视频形式择一</li><li>提供主题影像素材、互动数据及会后场景复盘</li></ul></article>
-        <article class="brand-card premium"><span class="brand-label">05 · 赛事联合</span><h3>赛事联合品牌伙伴</h3><div class="brand-price">98,000 元</div><span class="value-jump">联合身份 + 重点模块 + 全程内容</span><p class="best-for">适合与赛事共同打造一个重点内容或服务模块，形成赛前、现场与赛后的完整品牌叙事。</p><ul class="rights"><li>获得“FDT·X Lab 赛事联合品牌伙伴”官方合作身份</li><li>联合策划并呈现 1 个赛事重点模块，如创新体验区、参赛者服务站或行业交流环节</li><li>大会核心合作区域、现场视频及重点环节联合露出</li><li>官方联合内容 2 次：赛前合作亮相 1 次＋赛后现场成果回顾 1 次；图文、海报或短视频形式按内容选择</li><li>参与公开赛事观摩及重点行业交流</li><li>提供完整传播素材、互动数据与合作复盘简报</li></ul></article>
-        </div>
-        <p class="data-note">各档方案按参与深度独立配置，最终权益以双方确认方案为准。互动数据包含曝光量、扫码量、领取量等汇总信息；个人信息仅在参与者主动授权后提供。</p>
       </div>
+    </div>
+  </section>
 
-      <div class="product-support-panel">
-        <h3>赛事产品赞助合作</h3>
-        <p>企业可根据赛事实际需求提供产品、物料、设备或专业服务。赞助内容进入现场真实使用或发放场景；产品被赛事采用、按约定完成交付且赞助价值达到 49,800 元后，企业可享有专项加购福利。大宗产品赞助采用定制合作方式。</p>
-        <p class="support-subtitle"><b>赛事需求品类包括但不限于：</b></p>
-        <div class="supply-grid">
-          <article class="supply-card"><b>水与饮品</b><p>瓶装水、气泡水、咖啡、茶饮、功能饮料及其他现场饮品。</p></article>
-          <article class="supply-card"><b>食品与能量补给</b><p>零食、轻食、能量棒、烘焙食品、水果及其他赛事补给。</p></article>
-          <article class="supply-card"><b>参赛者物料</b><p>帆布袋、证件绳、徽章、笔记本、书写工具、服装及日常用品。</p></article>
-          <article class="supply-card"><b>奖品与礼赠</b><p>数码产品、消费产品、健康产品、会员权益、体验券及赛事奖品。</p></article>
-          <article class="supply-card"><b>设备与技术服务</b><p>显示设备、打印设备、充电设备、网络支持、软件账号、云资源及算力支持。</p></article>
-          <article class="supply-card"><b>现场制作与服务</b><p>印刷、导视、展具、摄影摄像、直播、物流、搭建及其他赛事执行资源。</p></article>
+  <!-- 三方模式 -->
+  <section class="blk">
+    <div class="wrap">
+      <div class="folio reveal">THE MODEL · 一场大会，链接三方</div>
+      <h2 class="reveal">企业出题，人才解题，<span class="hl">政府背书</span></h2>
+      <p class="lede reveal">以线下大会为切入点整合三方资源：企业以 Challenge Partner 身份付费发布课题，青年人才在真实课题中证明能力，政府与机构提供背书与资源链接。</p>
+      <div class="model">
+        <div class="reveal">
+          <svg viewBox="0 0 560 500" fill="none" role="img" aria-label="三方生态图">
+            <defs>
+              <radialGradient id="hubGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#debcea" stop-opacity=".22"/>
+                <stop offset="100%" stop-color="#debcea" stop-opacity="0"/>
+              </radialGradient>
+              <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M0 0L10 5L0 10z" fill="#debcea" fill-opacity=".7"/>
+              </marker>
+            </defs>
+            <circle cx="280" cy="255" r="150" fill="url(#hubGlow)"/>
+            <line x1="280" y1="140" x2="142" y2="372" stroke="hsla(0,0%,100%,.18)" stroke-width="1"/>
+            <line x1="280" y1="140" x2="418" y2="372" stroke="hsla(0,0%,100%,.18)" stroke-width="1"/>
+            <line x1="142" y1="400" x2="418" y2="400" stroke="hsla(0,0%,100%,.18)" stroke-width="1"/>
+            <line x1="262" y1="196" x2="170" y2="330" stroke="#debcea" stroke-opacity=".55" stroke-width="1.4" marker-end="url(#arr)"/>
+            <line x1="298" y1="196" x2="390" y2="330" stroke="#debcea" stroke-opacity=".55" stroke-width="1.4" marker-end="url(#arr)"/>
+            <line x1="196" y1="400" x2="364" y2="400" stroke="#debcea" stroke-opacity=".55" stroke-width="1.4" marker-end="url(#arr)"/>
+            <g font-family="'JetBrains Mono',monospace" font-size="10" fill="#c1b3c8" letter-spacing="1">
+              <text x="88" y="250">发布真实课题</text>
+              <text x="388" y="250">背书 · 资源链接</text>
+              <text x="280" y="482" text-anchor="middle">揭榜解题 · 能力证明</text>
+            </g>
+            <circle cx="280" cy="255" r="86" fill="#281a2f" stroke="#debcea" stroke-opacity=".55" stroke-width="1.2"/>
+            <circle cx="280" cy="255" r="86" fill="none" stroke="#debcea" stroke-opacity=".2" stroke-width="1">
+              <animate attributeName="r" values="86;98;86" dur="3.4s" repeatCount="indefinite"/>
+              <animate attributeName="stroke-opacity" values=".35;0;.35" dur="3.4s" repeatCount="indefinite"/>
+            </circle>
+            <text x="280" y="240" text-anchor="middle" font-family="'Inter','Noto Sans SC',sans-serif" font-weight="800" font-size="19" fill="#fff">FDT·X Lab</text>
+            <text x="280" y="264" text-anchor="middle" font-family="'Noto Sans SC',sans-serif" font-weight="600" font-size="13" fill="#debcea">千人创新赛场</text>
+            <text x="280" y="286" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="9.5" fill="#c1b3c8" letter-spacing="1.5">72H · HANGZHOU · 2026</text>
+            <g>
+              <rect x="190" y="52" width="180" height="88" rx="16" fill="#281a2f" stroke="hsla(0,0%,100%,.15)"/>
+              <rect x="206" y="40" width="64" height="22" rx="11" fill="#debcea"/>
+              <text x="238" y="55" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-weight="700" font-size="10" fill="#281a2f">TO B</text>
+              <text x="280" y="92" text-anchor="middle" font-family="'Noto Sans SC',sans-serif" font-weight="700" font-size="16" fill="#fff">企业 · 课题发起方</text>
+              <text x="280" y="114" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="9.5" fill="#c1b3c8" letter-spacing="1">付费 · CHALLENGE PARTNER</text>
+            </g>
+            <g>
+              <rect x="52" y="356" width="180" height="88" rx="16" fill="#281a2f" stroke="hsla(0,0%,100%,.15)"/>
+              <rect x="68" y="344" width="64" height="22" rx="11" fill="none" stroke="#debcea" stroke-opacity=".6"/>
+              <text x="100" y="359" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-weight="700" font-size="10" fill="#debcea">TO C</text>
+              <text x="142" y="396" text-anchor="middle" font-family="'Noto Sans SC',sans-serif" font-weight="700" font-size="16" fill="#fff">人才 · 解题者</text>
+              <text x="142" y="418" text-anchor="middle" font-family="'Noto Sans SC',sans-serif" font-size="10" fill="#c1b3c8">学生 · 青年创业者 · 千人规模</text>
+            </g>
+            <g>
+              <rect x="328" y="356" width="180" height="88" rx="16" fill="#281a2f" stroke="hsla(0,0%,100%,.15)"/>
+              <rect x="344" y="344" width="64" height="22" rx="11" fill="none" stroke="#debcea" stroke-opacity=".6"/>
+              <text x="376" y="359" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-weight="700" font-size="10" fill="#debcea">TO G</text>
+              <text x="418" y="396" text-anchor="middle" font-family="'Noto Sans SC',sans-serif" font-weight="700" font-size="16" fill="#fff">政府 · 机构</text>
+              <text x="418" y="418" text-anchor="middle" font-family="'Noto Sans SC',sans-serif" font-size="10" fill="#c1b3c8">政策背书 · 资源链接方</text>
+            </g>
+          </svg>
         </div>
-        <div class="support-box">
-          <div><h3>每一份产品赞助均享有基础权益</h3><p>赛事尊重并认真使用每一份符合需求的产品支持，基础权益适用于所有按约定完成交付的产品赞助。</p></div>
-          <ul class="support-list"><li>产品进入双方确认的现场使用或发放场景。</li><li>品牌列入赛事产品支持鸣谢清单。</li><li>在适合的使用位置标注产品或品牌来源。</li><li>会后提供实际使用记录及基础现场影像。</li></ul>
+        <div>
+          <div class="role reveal" data-go="plans">
+            <div class="who"><span class="k">TO B</span><h4>企业 — 发布真实经营课题</h4><span class="go">查看合作方案 →</span></div>
+            <p>获得多元方案、人才证据与品牌曝光——一次参与延伸为品牌、人才与业务的长期价值。</p>
+          </div>
+          <a class="role reveal" href="signup.html" style="display:block;text-decoration:none">
+            <div class="who"><span class="k">TO C</span><h4>青年人才 — 揭榜组队、证明能力</h4><span class="go">查看报名通道 →</span></div>
+            <p>学生与青年创业者留下可带走、可复盘的能力证据，赢得合作、岗位与成长机会。</p>
+          </a>
+          <div class="role reveal" data-go="plans">
+            <div class="who"><span class="k">TO G</span><h4>政府与机构 — 背书与资源链接</h4><span class="go">查看共建方向 →</span></div>
+            <p>以政策支持与资源网络入场，沉淀人才集聚、产业协作与城市创新名片。</p>
+          </div>
         </div>
-        <h3 class="support-subtitle">产品赞助企业专项加购福利</h3>
-        <div class="addon-eligibility"><span>专项加购资格</span><strong>产品被赛事采用并完成交付，且赞助价值达到 49,800 元</strong></div>
-        <div class="addon-pricing-grid" aria-label="赛事产品赞助专属加购方案">
-          <article><span>品牌影响力加购</span><b>加购 29,800 元</b><p>获得主题品牌体验区权益</p></article>
-          <article><span>参赛企业加购</span><b>加购 29,800 元</b><p>获得业务创新伙伴权益</p></article>
-          <article><span>进阶合作加购</span><b>加购 49,800 元</b><p>获得企业影响力起步计划权益</p></article>
-        </div>
-        <p class="data-note">大宗产品赞助，以及定制设备、技术服务、大宗物料、多品类组合等非标合作，由双方根据赛事需求和企业目标单独沟通定制。</p>
-        <div class="addon-choice-grid">
-          <article><b>希望扩大品牌触达</b><p>选择品牌影响力加购，将产品支持延展为主题体验场景与品牌内容传播。</p></article>
-          <article><b>希望获得业务解法</b><p>选择参赛企业加购，以企业真实课题获得方案共创、成果评议与人才连接。</p></article>
-          <article><b>希望形成双重价值</b><p>选择进阶合作加购，让产品触达、品牌表达与企业课题在同一行动中协同呈现。</p></article>
-        </div>
-        <div class="notes">
-          <div><b>企业获得的收益</b><p>产品进入真实赛事使用场景，形成实际使用记录与现场素材；赞助价值达到 49,800 元后，可享有品牌、课题或进阶合作的专项加购福利。</p></div>
-          <div><b>专项加购门槛</b><p>产品被赛事采用、按约定完成交付，且赞助价值达到 49,800 元。该价值用于判定资格，不直接折算或冲抵现金合作费。</p></div>
-          <div><b>方案选择方式</b><p>品牌影响力合作侧重展示、互动和内容传播；参赛企业合作侧重课题成果与人才连接；进阶方案同时覆盖品牌影响与课题共创。</p></div>
-        </div>
-        <p class="data-note">参与流程：提交赞助产品清单 → 确认赛事需求与交付数量 → 明确产品赞助价值与档位 → 选择专项加购方案 → 确认权益与执行安排。产品须符合赛事需求并按约定完成交付；专项加购限选择一个主合作方案，同一批产品不重复获得多套加购资格。运输、仓储、人员及特殊展示成本由双方单独确认。</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="dark">
-      <div class="section-head">
-        <div><p class="eyebrow">06 · Value Comparison</p><h2>三类合作路径<br>各有清晰的价值侧重</h2></div>
-        <p class="summary">围绕品牌影响、业务创新与产品触达三类目标，企业可选择与当前需求更匹配的合作方式。</p>
+  <!-- 数据墙 -->
+  <section class="blk" style="padding-top:0">
+    <div class="wrap">
+      <div class="folio reveal">WHY NOW · 为什么是这件事</div>
+      <h2 class="reveal">招人难、创新慢——<span class="hl">AI 正在加速这场错配</span></h2>
+      <p class="lede reveal">简历看不出真实能力，面试测不出协作与抗压。企业的人才与创新难题，需要一个新的验证场景。</p>
+      <div class="statwall">
+        <div class="cell reveal"><div class="num"><span data-count="91">0</span><small>%</small></div><h4>企业认为 AI 正在改变员工队伍</h4><p>Mercer《2025/2026 全球技能调研报告》</p></div>
+        <div class="cell reveal"><div class="num"><span data-count="40">0</span><small>%</small></div><h4>高级管理者 18 个月内失败或离任</h4><p>Heidrick &amp; Struggles · 约 20,000 例研究</p></div>
+        <div class="cell reveal"><div class="num"><span data-count="40">0</span><small>万+</small></div><h4>一次高管错配的更替成本下限</h4><p>Michael Page · SHRM · CAP 保守估算</p></div>
+        <div class="cell reveal"><div class="num"><span data-count="18">0</span><small>%</small></div><h4>组织明确识别出新的技能需求</h4><p>Mercer《2024—2025 全球人才趋势 · 中国》</p></div>
+        <div class="cell reveal"><div class="num"><span data-count="59">0</span><small>%</small></div><h4>中国企业考虑招聘灵活专业人才</h4><p>瀚纳仕《亚洲灵活人才洞察报告》· n=1,930</p></div>
+        <div class="cell reveal"><div class="num"><span data-count="8">0</span><small>×</small></div><h4>高绩效者与平均水平的生产力差距</h4><p>McKinsey · 高复杂度岗位人才研究（2017）</p></div>
       </div>
-      <div class="compare-wrap" role="region" aria-label="品牌影响力合作、企业课题共创与赛事产品赞助的价值差异" tabindex="0">
-        <table>
-          <thead><tr><th>比较维度</th><th>品牌影响力合作</th><th>企业课题共创</th><th>赛事产品赞助</th></tr></thead>
-          <tbody>
-            <tr><td>核心价值</td><td>在精准创新人群中建立品牌认知，通过展示、互动与内容传播强化品牌信任</td><td>围绕企业真实业务问题汇聚跨领域智慧，形成多元解法与新的行动方向</td><td>以产品触达目标用户、创造真实使用体验为核心，建立产品认知并获得现场反馈</td></tr>
-            <tr><td>价值回报</td><td>品牌展示阵地、互动场景、官方传播内容、现场数据及可复用影像素材</td><td>企业专属课题方案、成果评议、可验证的创新方向及授权范围内的人才连接</td><td>产品真实使用、品牌来源标注、使用记录、汇总反馈、基础素材及专项加购资格</td></tr>
-            <tr><td>赛后延展</td><td>将赛事内容用于后续品牌传播、客户沟通与市场活动，延长品牌影响周期</td><td>推动优选方案进入验证与落地，延展为项目共创、人才合作及组织创新</td><td>以真实使用反馈支持产品优化，并继续延展品牌合作、课题共创或进阶方案</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="bundle-pricing">
-      <div class="section-head">
-        <div><p class="eyebrow">07 · Advanced Partnership</p><h2>进阶合作方案<br>让品牌影响力建立在<br>真实行动之上</h2></div>
-        <p class="summary">同时选择品牌影响力合作与企业课题共创，即可进入进阶合作方案。两类合作统一策划，以更具吸引力的组合价格获得品牌与业务双重价值。</p>
+  <!-- 四层验证 strip -->
+  <section class="blk" style="padding-top:0">
+    <div class="wrap">
+      <div class="folio reveal">METHOD · 怎么判断一个人</div>
+      <h2 class="reveal">四层验证，<span class="hl">不靠简历和一次面试</span></h2>
+      <div class="fl reveal">
+        <div class="fl-i"><div class="ln">LAYER · 01</div><h4>赛前匹配</h4><p>自评与课题预匹配，不以履历头衔设门槛</p></div>
+        <div class="fl-i"><div class="ln">LAYER · 02</div><h4>过程观察</h4><p>72 小时协作全程留痕，能力自然显现</p></div>
+        <div class="fl-i"><div class="ln">LAYER · 03</div><h4>综合评审</h4><p>同题多解 + 变量突袭 + 结构化答辩</p></div>
+        <div class="fl-i"><div class="ln">LAYER · 04</div><h4>合作追踪</h4><p>赛后一年跟踪交付、适配与成长</p></div>
       </div>
-      <div class="bundle-lead">
-        <div><h3>一次合作，同时解决两个目标</h3><p>企业课题共创负责形成真实解法与行动内容，品牌影响力合作负责放大现场体验与传播触达，两部分按照同一企业目标协同设计。</p></div>
-        <strong>业务问题得到解法<br>品牌行动获得关注</strong>
-      </div>
-      <div class="bundle-grid">
-        <article class="bundle-card recommended"><span class="badge">轻量组合</span><h3>企业影响力起步计划</h3><div class="bundle-price">79,800 元</div><div class="original"><s>单独购买 99,600 元</s><span class="saving">组合节省 19,800 元</span></div><p>49,800 元业务创新伙伴<br>＋49,800 元主题品牌体验区</p><p class="decision-line">适合以一个明确课题进入赛事，同时建立品牌体验场景</p></article>
-        <article class="bundle-card"><span class="badge">业务深化组合</span><h3>企业影响力深化计划</h3><div class="bundle-price">119,800 元</div><div class="original"><s>单独购买 147,800 元</s><span class="saving">组合节省 28,000 元</span></div><p>98,000 元深度共创伙伴<br>＋49,800 元主题品牌体验区</p><p class="decision-line">适合优先获得深度课题成果，并同步完成品牌场景传播</p></article>
-        <article class="bundle-card"><span class="badge">双重深度组合</span><h3>企业影响力联合计划</h3><div class="bundle-price">159,800 元</div><div class="original"><s>单独购买 196,000 元</s><span class="saving">组合节省 36,200 元</span></div><p>98,000 元深度共创伙伴<br>＋98,000 元赛事联合品牌伙伴</p><p class="decision-line">适合同时追求深度业务共创与赛事级品牌影响</p></article>
-      </div>
-      <div class="upgrade-route">
-        <article><span class="route-label">BUSINESS VALUE</span><h3>获得可推进的业务成果</h3><ul><li>以企业真实问题组织跨领域人才开展共创。</li><li>获得多元方案、成果评议与后续验证方向。</li><li>在授权范围内连接具有合作潜力的人才。</li></ul></article>
-        <article><span class="route-label">BRAND VALUE</span><h3>获得有内容的品牌表达</h3><ul><li>通过主题体验区或赛事联合权益扩大现场触达。</li><li>让真实课题、共创过程和企业行动成为传播内容。</li><li>获得现场素材、互动数据与官方传播支持。</li></ul></article>
-        <article class="outcome"><span class="route-label">INTEGRATED VALUE</span><h3>组合后的核心价值</h3><ul><li>品牌传播拥有真实业务行动作为可信支撑。</li><li>共创成果获得更广泛的关注与传播出口。</li><li>方案、内容、素材与数据共同沉淀为企业影响力资产。</li></ul></article>
-      </div>
-      <div class="advanced-perks">
-        <div><h3>组合方案协同支持</h3><p>平台将课题共创、品牌场景与内容传播作为一套完整行动进行协调，让两类权益形成相互支撑的企业表达。</p></div>
-        <ul><li>赛前梳理课题价值、品牌表达与核心传播信息。</li><li>结合企业目标，统筹现场展示、互动场景和成果采集。</li><li>按照赛事节奏规划赛前、现场及赛后的内容节点。</li><li>会后提供素材使用、成果传播及后续行动建议。</li><li>119,800 元与 159,800 元方案增加 1 次品牌内容与运营优化建议。</li></ul>
-      </div>
-      <div class="closing"><small>BRAND + BUSINESS</small><h3>让品牌影响力建立在真实业务行动之上，让共创成果拥有更长的传播生命力。</h3><p>组合方案适合希望一次合作同时获得业务解法、品牌触达与长期内容资产的企业。</p><div class="closing-footer"><span>认知半径 · FDT·X Lab</span><span>与认知半径共同探索 AI 时代的新可能性</span></div></div>
-    </section>
+      <div class="note reveal" style="margin-top:16px">完整方法论见 <a href="bp.html" style="color:var(--mint)">企业合作 BP →</a></div>
+    </div>
+  </section>
 
-    <footer><span>认知半径 · FDT·X Lab</span><span>在不确定的时代，与企业共同拓展多元化可能性。</span></footer>
+  <section class="cta">
+    <div class="wrap">
+      <div class="cta-box reveal">
+        <div class="k">HANGZHOU · 2026.12.17 — 12.19</div>
+        <h2>把真实课题带进赛场</h2>
+        <p>让一次 72 小时共创，成为新方向、新人才与长期合作的起点。</p>
+        <div class="cta-row">
+          <a class="btn btn-mint" data-go="plans">查看合作方案 →</a>
+          <a class="btn btn-ghost" data-go="venue">看看大会现场</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   </main>
+  <main class="view" id="view-plans">
+  <section class="blk" style="padding-top:32px">
+    <div class="wrap">
+      <section class="partner-bp" aria-labelledby="partner-title">
+        <div class="p-heading reveal">
+          <div><div class="folio">PARTNERSHIP · 企业合作路径</div><h2 id="partner-title">让一次参与，<br><span>同时产生业务与品牌价值</span></h2><div class="p-meta">2026 YEAR-END CO-CREATION EVENT · HANGZHOU</div></div>
+          <p>围绕企业真实需求、品牌场景与影响力目标，选择一条更接近当前任务的合作路径。</p>
+        </div>
+        <div class="p-paths" role="tablist" aria-label="三类企业合作路径">
+          <button class="p-path" type="button" role="tab" aria-selected="true" aria-controls="detail-project" data-partner-path><span class="p-path-top"><span>01 · BUSINESS VALUE</span><span class="p-path-badge">真实课题驱动</span></span><h3>课题共创</h3><span class="p-path-desc">把经营问题带进赛场，获得多元解法与人才连接</span><svg class="p-route-art" viewBox="0 0 360 120" fill="none" aria-hidden="true"><path d="M22 86C72 20 124 96 176 48S276 25 338 72" stroke="currentColor" stroke-width="2" stroke-dasharray="4 7"/><circle cx="22" cy="86" r="6" fill="currentColor"/><circle cx="176" cy="48" r="6" fill="currentColor"/><circle cx="338" cy="72" r="6" fill="currentColor"/><text x="14" y="111" fill="currentColor" font-size="11">真实问题</text><text x="151" y="29" fill="currentColor" font-size="11">共创验证</text><text x="295" y="103" fill="currentColor" font-size="11">可推进成果</text></svg><span class="p-path-bottom"><span class="p-price">¥49,800<small>起</small></span><span class="p-link-hint">查看权益 →</span></span></button>
+          <button class="p-path" type="button" role="tab" aria-selected="false" aria-controls="detail-brand" data-partner-path><span class="p-path-top"><span>02 · BRAND VALUE</span><span class="p-path-badge">场景触达</span></span><h3>品牌场景合作</h3><span class="p-path-desc">从信息触达走向体验、内容与现场关系</span><svg class="p-route-art" viewBox="0 0 360 120" fill="none" aria-hidden="true"><rect x="29" y="27" width="54" height="70" rx="12" stroke="currentColor"/><rect x="111" y="27" width="54" height="70" rx="12" stroke="currentColor"/><rect x="193" y="27" width="54" height="70" rx="12" stroke="currentColor"/><rect x="275" y="27" width="54" height="70" rx="12" stroke="currentColor"/><path d="M84 62h25m54 0h25m54 0h25" stroke="currentColor"/><circle cx="56" cy="62" r="10" fill="currentColor"/><path d="M139 48v28m-10-14h20M219 49l22 26m0-26-22 26M302 46v32" stroke="#1b1021" stroke-width="2"/><text x="25" y="113" fill="currentColor" font-size="10">看见</text><text x="107" y="113" fill="currentColor" font-size="10">驻场</text><text x="187" y="113" fill="currentColor" font-size="10">体验</text><text x="269" y="113" fill="currentColor" font-size="10">联合</text></svg><span class="p-path-bottom"><span class="p-price">¥9,800<small>起</small></span><span class="p-link-hint">查看权益 →</span></span></button>
+          <button class="p-path" type="button" role="tab" aria-selected="false" aria-controls="detail-influence" data-partner-path><span class="p-path-top"><span>03 · INTEGRATED VALUE</span><span class="p-path-badge">重点推荐</span></span><h3>影响力共创</h3><span class="p-path-desc">让品牌表达建立在真实业务行动之上</span><svg class="p-route-art" viewBox="0 0 360 120" fill="none" aria-hidden="true"><circle cx="180" cy="60" r="35" stroke="currentColor"/><circle cx="180" cy="60" r="13" fill="currentColor"/><circle cx="81" cy="60" r="22" stroke="currentColor"/><circle cx="279" cy="60" r="22" stroke="currentColor"/><path d="M103 60h64m26 0h64" stroke="currentColor"/><text x="48" y="103" fill="currentColor" font-size="11">业务行动</text><text x="153" y="17" fill="currentColor" font-size="11">整合策划</text><text x="254" y="103" fill="currentColor" font-size="11">品牌传播</text></svg><span class="p-path-bottom"><span class="p-price">¥79,800<small>起</small></span><span class="p-link-hint">查看组合 →</span></span></button>
+        </div>
+        <div class="p-values reveal"><div class="p-value"><svg viewBox="0 0 24 24" fill="none"><path d="M4 19V9m5 10V5m5 14v-7m5 7V3" stroke="currentColor" stroke-width="1.5"/></svg><div><strong>降低探索成本</strong><span>一笔投入，获得多项验证</span></div></div><div class="p-value"><svg viewBox="0 0 24 24" fill="none"><path d="M4 18h16M6 15l4-4 3 2 5-7" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="6" r="2" stroke="currentColor"/></svg><div><strong>找到增长路径</strong><span>把问题变成下一步行动</span></div></div><div class="p-value"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3" stroke="currentColor"/><path d="M5 20c.8-3.2 3-5 7-5s6.2 1.8 7 5M4 12H2m20 0h-2" stroke="currentColor" stroke-width="1.5"/></svg><div><strong>验证组织边界</strong><span>让跨界协作真实发生</span></div></div><div class="p-value"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.3 5.2L20 9l-4 4 .8 5.8-4.8-2.5-4.8 2.5L8 13 4 9l5.7-.8L12 3z" stroke="currentColor" stroke-width="1.3"/></svg><div><strong>沉淀品牌资产</strong><span>真实行动，形成内容</span></div></div></div>
+        <section class="p-detail" id="detail-project" role="tabpanel"><div class="p-detail-head"><div><div class="p-eyebrow">01 · ENTERPRISE CO-CREATION</div><h3>课题共创：从一个真实问题开始</h3></div><p>适合拥有明确业务课题，希望同时获得多元方案、人才判断与专业形象传播的企业。</p></div><div class="p-flow"><div><strong>企业出题</strong><small>真实经营问题</small></div><span>→</span><div><strong>跨域共创</strong><small>多组人才并行</small></div><span>→</span><div><strong>评议连接</strong><small>成果与人才证据</small></div><span>→</span><div><strong>后续验证</strong><small>推动行动落地</small></div></div><div class="p-offers"><article class="p-offer"><div class="p-eyebrow">LEVEL 01</div><h4>业务创新伙伴</h4><div class="p-price">¥49,800</div><p class="p-fit">首次参与；已有 1 个明确问题</p><div class="p-feature"><b>1</b><span>个标准课题</span></div><div class="p-mini">基础梳理 · 课题签约<br>课题介绍、伙伴区标准展示位</div></article><article class="p-offer"><div class="p-eyebrow">LEVEL 02</div><h4>深度共创伙伴</h4><div class="p-price">¥98,000</div><p class="p-fit">重点业务课题；需要更深沟通</p><div class="p-feature"><b>1</b><span>个深度课题</span></div><div class="p-mini">精细梳理 · 中期交流 · 驻场评议<br>企业介绍、品牌墙伙伴区</div></article><article class="p-offer"><div class="p-eyebrow">LEVEL 03</div><h4>赛道共创伙伴</h4><div class="p-price">¥198,000</div><p class="p-fit">希望定义赛道议题，建立行业影响力</p><div class="p-feature"><b>1</b><span>条赛道共建</span></div><div class="p-mini">深度课题 · 赛道集中签约<br>赛道主题展示、品牌墙赛道区</div></article><article class="p-offer"><div class="p-eyebrow">LEVEL 04</div><h4>大会核心伙伴</h4><div class="p-price">¥398,000</div><p class="p-fit">多课题参与；大会级核心合作</p><div class="p-feature"><b>3</b><span>个深度课题</span></div><div class="p-mini">系统化梳理 · 主舞台重点签约<br>大会主题、跨赛道交流</div></article></div><details class="p-expand"><summary>查看课题共创完整权益矩阵</summary><div class="p-table-scroll"><table class="p-table"><caption>权益以双方最终确认方案为准；“不含”表示该档位不配置该权益。</caption><thead><tr><th>权益项目</th><th>业务创新伙伴<br><b>¥49,800</b></th><th>深度共创伙伴<br><b>¥98,000</b></th><th>赛道共创伙伴<br><b>¥198,000</b></th><th>大会核心伙伴<br><b>¥398,000</b></th></tr></thead><tbody><tr><th>需求与评议</th><td>基础梳理<br>驻场评委评分</td><td>精细梳理、中期交流<br>驻场评分与嘉宾评议</td><td>精细梳理、中期交流<br>驻场评分与嘉宾评议</td><td>系统化梳理、中期交流<br>驻场评分与嘉宾评议</td></tr><tr><th>现场品牌展示</th><td>课题介绍、伙伴区<br>标准展示位</td><td>企业介绍、品牌墙伙伴区<br>视频轮播与企业展示位</td><td>赛道主题展示、品牌墙赛道区<br>赛道展示位与视频呈现</td><td>主背景核心标识、品牌墙核心区<br>核心展示位与暖场呈现</td></tr><tr><th>签约与舞台</th><td>课题签约</td><td>企业专题签约</td><td>赛道集中签约<br>赛道议题环节</td><td>主舞台重点签约<br>分享与颁奖参与</td></tr><tr><th>年度品牌展示</th><td>不含</td><td>12 个月</td><td>12 个月</td><td>12 个月</td></tr><tr><th>年度信息发布</th><td>不含</td><td>4 次</td><td>6 次</td><td>12 次</td></tr><tr><th>共建回访</th><td>不含</td><td>无固定回访</td><td>一年 2 次</td><td>一年 4 次</td></tr></tbody></table></div></details></section>
+        <section class="p-detail" id="detail-brand" role="tabpanel" hidden><div class="p-detail-head"><div><div class="p-eyebrow">02 · BRAND PARTNERSHIP</div><h3>品牌场景合作：从被看见到被记住</h3></div><p>合作深度沿着“信息触达—驻场沟通—产品体验—场景共创—赛事联合”逐级提升。</p></div><div class="p-brand-ladder"><article class="p-brand-level" style="--strength:.35"><div class="p-brand-bar"></div><div class="p-brand-body"><div class="p-eyebrow">LEVEL 01</div><h4>品牌陈列位</h4><div class="p-price">¥9,800</div><p>轻量进入赛事现场，完成基础品牌认知与信息引导。</p><div class="p-brand-stage"><b>01</b> 信息触达</div></div><details class="p-brand-details"><summary>权益摘要</summary><ul><li>1 个立式品牌介绍画面或资料架</li><li>进入现场品牌合作名录</li><li>适合静态信息陈列</li></ul></details></article><article class="p-brand-level" style="--strength:.5"><div class="p-brand-bar"></div><div class="p-brand-body"><div class="p-eyebrow">LEVEL 02</div><h4>标准品牌展位</h4><div class="p-price">¥16,800</div><p>建立稳定现场沟通阵地，支持团队驻场接待。</p><div class="p-brand-stage"><b>02</b> 驻场沟通</div></div><details class="p-brand-details"><summary>权益摘要</summary><ul><li>1 个小型标准展位</li><li>人员驻场接待与交流</li><li>进入展位导览与名录</li></ul></details></article><article class="p-brand-level" style="--strength:.65"><div class="p-brand-bar"></div><div class="p-brand-body"><div class="p-eyebrow">LEVEL 03</div><h4>产品互动展位</h4><div class="p-price">¥29,800</div><p>互动设计＋体验执行＋数据反馈，验证现场人群反应。</p><div class="p-brand-stage"><b>03</b> 产品体验</div></div><details class="p-brand-details"><summary>权益摘要</summary><ul><li>产品互动型展位</li><li>共创 1 套轻量互动机制</li><li>提供扫码量、参与量等汇总</li></ul></details></article><article class="p-brand-level" style="--strength:.8"><div class="p-brand-bar"></div><div class="p-brand-body"><div class="p-eyebrow">LEVEL 04</div><h4>主题品牌体验区</h4><div class="p-price">¥49,800</div><p>场景命名＋联合策划＋主题传播。</p><div class="p-brand-stage"><b>04</b> 场景共创</div></div><details class="p-brand-details"><summary>权益摘要</summary><ul><li>共创并命名 1 个主题体验场景</li><li>主题区域、导视、活动指南呈现</li><li>官方账号发布 1 次介绍</li></ul></details></article><article class="p-brand-level" style="--strength:1"><div class="p-brand-bar"></div><div class="p-brand-body"><div class="p-eyebrow">LEVEL 05</div><h4>赛事联合品牌伙伴</h4><div class="p-price">¥98,000</div><p>联合身份＋重点模块＋全程内容。</p><div class="p-brand-stage"><b>05</b> 赛事联合</div></div><details class="p-brand-details"><summary>权益摘要</summary><ul><li>官方合作身份</li><li>联合策划 1 个赛事重点模块</li><li>官方联合内容 2 次</li></ul></details></article></div><p class="p-caption">各档方案按参与深度独立配置，最终权益以双方确认方案为准。互动数据为汇总信息；个人信息仅在参与者主动授权后提供。</p></section>
+        <section class="p-detail" id="detail-influence" role="tabpanel" hidden><div class="p-detail-head"><div><div class="p-eyebrow">03 · ADVANCED PARTNERSHIP</div><h3>影响力共创：让品牌影响力建立在真实行动之上</h3></div><p>课题共创负责形成真实解法，品牌场景合作负责放大现场体验，两部分统一策划。</p></div><div class="p-combination"><div><b>业务问题</b><small>真实课题共创<br>49,800 / 98,000 元</small></div><span>＋</span><div><b>品牌行动</b><small>主题体验或赛事联合<br>49,800 / 98,000 元</small></div><span>＝</span><div class="p-sum"><b>影响力资产</b><small>方案、内容、素材与数据共同沉淀</small></div></div><div class="p-bundles"><article class="p-bundle"><div class="p-eyebrow">LIGHT COMBINATION</div><h4>企业影响力起步计划</h4><div class="p-price">¥79,800</div><span class="p-savings">组合节省 ¥19,800</span><div class="p-original">单独购买 ¥99,600</div><div class="p-bundle-parts"><div>¥49,800 业务创新伙伴 <small>＋</small></div><div>¥49,800 主题品牌体验区</div></div><p>适合以一个明确课题进入赛事，同时建立品牌体验场景。</p></article><article class="p-bundle"><div class="p-eyebrow">BUSINESS DEEPENING</div><h4>企业影响力深化计划</h4><div class="p-price">¥119,800</div><span class="p-savings">组合节省 ¥28,000</span><div class="p-original">单独购买 ¥147,800</div><div class="p-bundle-parts"><div>¥98,000 深度共创伙伴 <small>＋</small></div><div>¥49,800 主题品牌体验区</div></div><p>适合优先获得深度课题成果，并同步完成品牌场景传播。</p></article><article class="p-bundle"><div class="p-eyebrow">DOUBLE DEEP COMBINATION</div><h4>企业影响力联合计划</h4><div class="p-price">¥159,800</div><span class="p-savings">组合节省 ¥36,200</span><div class="p-original">单独购买 ¥196,000</div><div class="p-bundle-parts"><div>¥98,000 深度共创伙伴 <small>＋</small></div><div>¥98,000 赛事联合品牌伙伴</div></div><p>适合同时追求深度业务共创与赛事级品牌影响。</p></article></div><div class="p-support"><strong>组合方案协同支持</strong><p>赛前梳理课题价值、品牌表达与核心传播信息；统筹现场展示、互动场景和成果采集；规划赛前、现场及赛后的内容节点；会后提供素材使用、成果传播及后续行动建议。</p></div></section>
+        <section class="p-sponsor p-expand reveal"><details><summary>补充：赛事产品赞助与专项加购</summary><div class="p-sponsor-body"><p class="p-sponsor-intro">企业可提供饮品、食品、参赛者物料、奖品礼赠、设备技术或现场服务，进入真实使用或发放场景。产品被采用并完成交付，赞助价值达到 <b>¥49,800</b> 后，可选择一项专项加购。</p><div class="p-sponsor-categories"><span>水与饮品</span><span>食品与能量补给</span><span>参赛者物料</span><span>奖品与礼赠</span><span>设备与技术服务</span><span>现场制作与服务</span></div><div class="p-threshold"><b>¥49,800</b> <span>专项加购资格门槛</span></div><div class="p-addons"><div class="p-addon"><h4>品牌影响力加购</h4><b><small>加购</small>¥29,800</b><p>获得主题品牌体验区权益</p></div><div class="p-addon"><h4>参赛企业加购</h4><b><small>加购</small>¥29,800</b><p>获得业务创新伙伴权益</p></div><div class="p-addon"><h4>进阶合作加购</h4><b><small>加购</small>¥49,800</b><p>获得企业影响力起步计划权益</p></div></div><ul class="p-terms"><li>产品支持须符合赛事需求并按约定完成交付。</li><li>专项加购限选择一个主合作方案，同一批产品不重复获得多套资格。</li><li>大宗产品、定制设备、多品类组合等非标合作，双方单独沟通。</li></ul></div></details></section>
+        <div class="p-source"><p>以上价格为报价方案起始价，最终权益以双方确认方案为准。<br>合作咨询：欢迎带着你的业务目标与我们沟通。</p><a href="bp.html">查看完整企业合作 BP →</a></div>
+      </section>
+    </div>
+  </section>
+</main>
+<!-- ==================== VIEW · VENUE ==================== -->
+<main class="view" id="view-venue">
+
+  <section class="blk" style="padding-top:130px">
+    <div class="wrap">
+      <div class="folio reveal">THE VENUE · 大会现场</div>
+      <h2 class="reveal">千人同场的 72 小时，<br><span class="hl">现场这样运转</span></h2>
+      <p class="lede reveal">主会场按「攻坚 — 观察 — 对接」三条动线设计：青年人才在作战区解题，企业在观察廊看过程，双方在对接区谈合作。</p>
+      <div class="info-bar reveal">
+        <span class="chip hot">杭州 · 拟定 2026.12.17 — 12.19</span>
+        <span class="chip">千人规模场馆 · 场地揭晓中</span>
+        <span class="chip">全程观察通道 · 授权开放</span>
+      </div>
+
+      <!-- 会场平面示意 -->
+      <div class="floorplan reveal">
+        <svg viewBox="0 0 900 520" fill="none" role="img" aria-label="会场功能分区示意图">
+          <defs>
+            <marker id="arr2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+              <path d="M0 0L10 5L0 10z" fill="#c1b3c8"/>
+            </marker>
+          </defs>
+          <rect x="8" y="8" width="884" height="504" rx="20" stroke="hsla(0,0%,100%,.15)" fill="none"/>
+          <text x="36" y="44" font-family="'JetBrains Mono',monospace" font-size="10" fill="#c1b3c8" letter-spacing="2">FLOOR PLAN · 功能分区示意（按最终场地调整）</text>
+
+          <!-- A 主舞台 -->
+          <rect x="220" y="64" width="460" height="88" rx="14" fill="#281a2f" stroke="#debcea" stroke-opacity=".55" stroke-width="1.2"/>
+          <text x="450" y="100" text-anchor="middle" font-family="'Noto Sans SC',sans-serif" font-weight="700" font-size="15" fill="#fff">主舞台 · 开闭幕与公开答辩</text>
+          <text x="450" y="124" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="9.5" fill="#c1b3c8" letter-spacing="1.5">A · STAGE &amp; FINAL PITCH</text>
+
+          <!-- B 攻坚区 -->
+          <rect x="220" y="184" width="460" height="230" rx="14" fill="rgba(222,188,234,.05)" stroke="hsla(0,0%,100%,.15)"/>
+          <g stroke="hsla(0,0%,100%,.1)">
+            <line x1="335" y1="196" x2="335" y2="402"/><line x1="450" y1="196" x2="450" y2="402"/><line x1="565" y1="196" x2="565" y2="402"/>
+            <line x1="232" y1="260" x2="668" y2="260"/><line x1="232" y1="336" x2="668" y2="336"/>
+          </g>
+          <text x="450" y="232" text-anchor="middle" font-family="'Noto Sans SC',sans-serif" font-weight="700" font-size="15" fill="#fff">课题攻坚区</text>
+          <text x="450" y="252" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="9.5" fill="#c1b3c8" letter-spacing="1.5">B · 20+ WAR ROOMS</text>
+
+          <!-- C 榜单墙 -->
+          <rect x="40" y="64" width="150" height="350" rx="14" fill="#281a2f" stroke="hsla(0,0%,100%,.15)"/>
+          <text x="115" y="228" text-anchor="middle" font-family="'Noto Sans SC',sans-serif" font-weight="700" font-size="15" fill="#fff">榜单墙</text>
+          <text x="115" y="250" text-anchor="middle" font-family="'Noto Sans SC',sans-serif" font-size="11" fill="#c1b3c8">揭榜 · 组队</text>
+          <text x="115" y="274" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="9.5" fill="#c1b3c8" letter-spacing="1.5">C · BOARD</text>
+
+          <!-- D 观察廊 -->
+          <rect x="710" y="64" width="150" height="350" rx="14" fill="#281a2f" stroke="hsla(0,0%,100%,.15)"/>
+          <text x="785" y="222" text-anchor="middle" font-family="'Noto Sans SC',sans-serif" font-weight="700" font-size="15" fill="#fff">观察廊</text>
+          <text x="785" y="244" text-anchor="middle" font-family="'Noto Sans SC',sans-serif" font-size="11" fill="#c1b3c8">企业 · 专家</text>
+          <text x="785" y="268" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="9.5" fill="#c1b3c8" letter-spacing="1.5">D · OBSERVE</text>
+          <g stroke="#debcea" stroke-opacity=".4" stroke-dasharray="4 5" marker-end="url(#arr2)">
+            <line x1="706" y1="150" x2="686" y2="180"/>
+            <line x1="706" y1="290" x2="686" y2="290"/>
+          </g>
+
+          <!-- E 对接区 -->
+          <rect x="40" y="438" width="400" height="56" rx="14" fill="#281a2f" stroke="hsla(0,0%,100%,.15)"/>
+          <text x="240" y="464" text-anchor="middle" font-family="'Noto Sans SC',sans-serif" font-weight="700" font-size="13" fill="#fff">洽谈对接区</text>
+          <text x="240" y="482" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="9" fill="#c1b3c8" letter-spacing="1.5">E · 1-ON-1 MEETING</text>
+
+          <!-- F 公开展区 -->
+          <rect x="460" y="438" width="400" height="56" rx="14" fill="#281a2f" stroke="hsla(0,0%,100%,.15)"/>
+          <text x="660" y="464" text-anchor="middle" font-family="'Noto Sans SC',sans-serif" font-weight="700" font-size="13" fill="#fff">公开展区 · 观众动线</text>
+          <text x="660" y="482" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="9" fill="#c1b3c8" letter-spacing="1.5">F · PUBLIC EXPO</text>
+        </svg>
+      </div>
+      <div class="plan-legend reveal">
+        <div class="pl"><span class="pl-k">A</span><div><b>主舞台</b><br><span>开闭幕、变量发布与终场答辩</span></div></div>
+        <div class="pl"><span class="pl-k dim">B</span><div><b>课题攻坚区</b><br><span>20+ 企业课题作战室，千人在此解题</span></div></div>
+        <div class="pl"><span class="pl-k dim">C</span><div><b>榜单墙</b><br><span>课题揭榜、组队与进度公示</span></div></div>
+        <div class="pl"><span class="pl-k dim">D</span><div><b>观察廊</b><br><span>企业与专家在授权边界内观察过程</span></div></div>
+        <div class="pl"><span class="pl-k dim">E</span><div><b>洽谈对接区</b><br><span>赛后合作意向的一对一沟通</span></div></div>
+        <div class="pl"><span class="pl-k dim">F</span><div><b>公开展区</b><br><span>脱敏案例开放展示，公众体验反馈</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 三日议程 -->
+  <section class="blk" style="padding-top:0">
+    <div class="wrap">
+      <div class="folio reveal">AGENDA · 赛前与三日议程</div>
+      <h2 class="reveal">从赛前预习，<span class="hl">到答辩与对接</span></h2>
+      <div class="agenda reveal">
+        <div class="ag-row">
+          <div class="d">赛前 2 周<small>线上</small></div>
+          <div><h4>课题预习 · 揭榜组队</h4>
+            <div class="ag-tags"><span class="tag">企业课题脱敏发布</span><span class="tag">青年人才自评与选题</span><span class="tag">主办方辅助预匹配</span><span class="tag m">观察通道开启</span></div>
+          </div>
+        </div>
+        <div class="ag-row">
+          <div class="d">DAY 1<small>12.17 · 现场</small></div>
+          <div><h4>开题 · 首轮攻坚</h4>
+            <div class="ag-tags"><span class="tag">开幕式与课题发布</span><span class="tag">企业业务负责人到场开题</span><span class="tag">液态组队确认</span><span class="tag">首轮方案冲刺</span></div>
+          </div>
+        </div>
+        <div class="ag-row">
+          <div class="d">DAY 2<small>12.18 · 现场</small></div>
+          <div><h4>深攻 · 变量突袭</h4>
+            <div class="ag-tags"><span class="tag">方案迭代与原型验证</span><span class="tag m">变量突袭：临时变更条件</span><span class="tag">中期检视与专家追问</span><span class="tag">过程行为留痕</span></div>
+          </div>
+        </div>
+        <div class="ag-row">
+          <div class="d">DAY 3<small>12.19 · 现场</small></div>
+          <div><h4>交付 · 答辩 · 对接</h4>
+            <div class="ag-tags"><span class="tag">成果交付与结构化答辩</span><span class="tag">评委团综合评审</span><span class="tag m">一对一洽谈对接会</span><span class="tag">闭幕与人才图谱发布</span></div>
+          </div>
+        </div>
+        <div class="ag-row">
+          <div class="d">赛后 1 年<small>持续</small></div>
+          <div><h4>合作履约 · 成长跟踪</h4>
+            <div class="ag-tags"><span class="tag">合作对接与签约协助</span><span class="tag">季度回访</span><span class="tag">成长复盘</span><span class="tag">组织适配反馈</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 现场机制 -->
+  <section class="blk" style="padding-top:0">
+    <div class="wrap">
+      <div class="folio reveal">ON-SITE · 四个现场机制</div>
+      <div class="mech">
+        <div class="m-card reveal"><div class="k">机制 01</div><h4>揭榜制</h4><p>企业课题以榜单形式发布，青年人才自主揭榜、自由组队，双向选择。</p></div>
+        <div class="m-card reveal"><div class="k">机制 02</div><h4>变量突袭</h4><p>攻坚中途投放条件变更，观察团队如何应对真实世界的不确定性。</p></div>
+        <div class="m-card reveal"><div class="k">机制 03</div><h4>观察通道</h4><p>企业与专家在授权边界内全程观察过程，而非只看终场路演。</p></div>
+        <div class="m-card reveal"><div class="k">机制 04</div><h4>结构化答辩</h4><p>问题理解、过程表现、专业交付、突变应对多维评审，相互印证。</p></div>
+      </div>
+      <div class="note reveal">* 场地平面与议程为拟定框架，最终方案以场地确认与赛前手册为准。</div>
+    </div>
+  </section>
+</main>
+<!-- ==================== VIEW · PLANS ==================== -->
+<main class="view" id="view-plans-legacy">
+
+  <section class="blk" style="padding-top:130px">
+    <div class="wrap">
+      <div class="legacy-plans" style="display:none">
+      <div class="folio reveal">PARTNERSHIP · 合作方案</div>
+      <h2 class="reveal">企业合作<span class="hl">三档方案</span></h2>
+      <p class="lede reveal">从现场观摩到课题共建，按参与深度选择——所有档位均含赛后一年跟踪服务。</p>
+
+      <div class="tiers">
+        <div class="tier reveal">
+          <div class="tk">TIER 01 · EXPERIENCE</div>
+          <h3>观察体验席</h3>
+          <div class="price">免费 <small>审核制 · 限量</small></div>
+          <div class="pd">适合：想先看懂模式再决策的企业</div>
+          <ul>
+            <li><b>现场观摩通行证</b>（每家企业 2 席）</li>
+            <li>观察廊通行 + 终场答辩席位</li>
+            <li>赛后<b>人才观察摘要</b>（脱敏版）</li>
+            <li>公开案例与传播内容包</li>
+          </ul>
+          <a class="btn btn-ghost" href="javascript:void(0)">申请观摩席位</a>
+        </div>
+        <div class="tier hot reveal">
+          <div class="badge">主推 · RECOMMENDED</div>
+          <div class="tk">TIER 02 · CHALLENGE PARTNER</div>
+          <h3>课题发起方</h3>
+          <div class="price">¥98,000 <small>起 / 道课题（拟定）</small></div>
+          <div class="pd">适合：有真实经营课题待解的企业</div>
+          <ul>
+            <li><b>1 道真实课题上榜</b>，专家团协助梳理与脱敏</li>
+            <li>多组人才并行攻坚，获得<b>多元可交付方案</b></li>
+            <li>围绕课题的<b>专属人才图谱</b>与能力证据</li>
+            <li>答辩评审席位 + 全程观察通道</li>
+            <li>品牌曝光与共创内容（合规口径）</li>
+            <li>赛后一年<b>合作对接与履约跟踪</b></li>
+          </ul>
+          <a class="btn btn-mint" href="javascript:void(0)">成为课题发起方 →</a>
+        </div>
+        <div class="tier reveal">
+          <div class="tk">TIER 03 · STRATEGIC PARTNER</div>
+          <h3>战略共建方</h3>
+          <div class="price">¥298,000 <small>起 / 年度（拟定）</small></div>
+          <div class="pd">适合：希望系统性链接青年创新人才的企业</div>
+          <ul>
+            <li><b>3 道课题</b>或定制专场课题日</li>
+            <li>八项能力评估维度<b>按企业需求定制</b></li>
+            <li>一年期人才管道 + 季度回访报告</li>
+            <li>联合品牌：主视觉、媒体与传播共建</li>
+            <li>政府与产业资源对接<b>优先权</b></li>
+          </ul>
+          <a class="btn btn-ghost" href="javascript:void(0)">预约商务沟通</a>
+        </div>
+      </div>
+      <div class="note reveal">* 以上价格与权益为拟定框架，最终以商务沟通与合作协议为准；课题数量、评估维度与传播权益均可按需组合。</div>
+
+      <!-- To C + To G -->
+      <div class="duo">
+        <div class="panel reveal">
+          <div class="pk">FOR TALENTS · TO C</div>
+          <h3>青年人才参赛 · 免费报名</h3>
+          <p>面向学生与青年创业者，审核制。带走能力证据，赢得真实合作机会。</p>
+          <div class="steps">
+            <div class="step"><span class="sn">1</span><div><b>报名与自评</b><p>提交背景与动机，完成天赋与能力倾向自评</p></div></div>
+            <div class="step"><span class="sn">2</span><div><b>课题预习与组队</b><p>阅读脱敏课题、自主选题，主办方辅助完成组队</p></div></div>
+            <div class="step"><span class="sn">3</span><div><b>现场攻坚与答辩</b><p>72 小时解题、交付与答辩，获得能力证据档案</p></div></div>
+          </div>
+          <a class="btn btn-mint" href="signup.html" style="margin-top:22px">青年人才：报名参赛 →</a>
+        </div>
+        <div class="panel reveal">
+          <div class="pk">FOR GOVERNMENT &amp; INSTITUTIONS · TO G</div>
+          <h3>政府与机构共建</h3>
+          <p>以背书与资源链接入场，共建城市人才与产业创新名片，一事一议。</p>
+          <div class="g-list">
+            <div class="g-i"><b>城市人才赛事共建</b><p>联合打造年度千人创新赛事 IP 与青年人才集聚场景</p></div>
+            <div class="g-i"><b>产业课题池</b><p>组织区域内企业发布真实课题，服务产业创新转型</p></div>
+            <div class="g-i"><b>青年人才工作站</b><p>以一年跟踪数据沉淀人才档案，支撑引才留才政策</p></div>
+          </div>
+          <a class="btn btn-ghost" href="javascript:void(0)" style="margin-top:22px">洽谈共建合作</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" style="padding-top:0">
+    <div class="wrap">
+      <div class="cta-box reveal">
+        <div class="k">BECOME A CHALLENGE PARTNER</div>
+        <h2>把真实课题带进赛场</h2>
+        <p>真实课题 · 真实能力 · 真实合作——诚邀企业与我们一起，开创 AI 时代的人才发掘新方式。</p>
+        <div class="cta-row">
+          <a class="btn btn-mint" href="javascript:void(0)">成为课题发起方 →</a>
+          <a class="btn btn-ghost" href="bp.html">查看完整企业合作 BP</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ==================== VIEW · ABOUT ==================== -->
+<main class="view" id="view-about">
+
+  <section class="blk" style="padding-top:130px">
+    <div class="wrap">
+      <div class="folio reveal">ABOUT · FDT·X LAB</div>
+      <h2 class="reveal">FDT·X Lab 2026 年底共创赛事，<br><span class="hl">让真实课题成为人才与企业共同成长的起点</span></h2>
+
+      <div class="about-intro reveal">
+        <div class="about-copy">
+          <p>AI 正在改变产业、岗位与组织协作方式。企业需要新的解题思路，也需要能够理解业务、运用技术、推动协作并承担结果的人才。基于对青年成长、女性发展与企业组织转型的长期关注，认知半径 TheRadius、早早早大学生圈与智耀魔方共同发起并主办 FDT·X Lab 2026 年底共创赛事。</p>
+          <p style="margin-top:14px">赛事将企业真实课题带入现场，让跨专业人才在 72 小时内完成问题分析、团队协作、AI 工具应用、方案设计、原型制作与成果展示，让能力在真实任务中被看见，也让企业在共创过程中验证人才与方案。</p>
+        </div>
+        <div class="about-facts" aria-label="赛事关键信息">
+          <div class="about-fact"><b>12.17—19</b><span>2026 年 · 杭州</span></div>
+          <div class="about-fact"><b>72H</b><span>集中共创与验证</span></div>
+          <div class="about-fact"><b>约 1,000</b><span>跨专业参赛者</span></div>
+          <div class="about-fact"><b>20+</b><span>企业真实业务课题</span></div>
+        </div>
+      </div>
+
+      <section class="about-section reveal" aria-labelledby="founders-title">
+        <div class="about-section-head"><h3 id="founders-title">联合发起与主办</h3><p>三方分别连接女性、青年人才与企业组织，共同关注人的优势如何被发现、能力如何在实践中成长，以及企业如何找到适合未来发展的人才。</p></div>
+        <div class="founder-grid">
+          <article class="founder"><div class="no">01 · WOMEN &amp; BUSINESS</div><h4>认知半径 TheRadius</h4><p>聚焦商业与科技、连接全球华人女性的可信支持社区。帮助女性理解能力特征、建立专业信用、连接可信资源，并将个人优势转化为事业成果、商业合作与社会影响力。</p></article>
+          <article class="founder"><div class="no">02 · YOUTH DEVELOPMENT</div><h4>早早早大学生圈</h4><p>专注大学生职业发展与长期成长，倡导“早认知、早行动、早成就”。自 2019 年起通过职业规划、企业访学、真实项目、实战训练与长期陪跑，帮助青年人才更早进入真实实践。</p></article>
+          <article class="founder"><div class="no">03 · ORGANIZATION &amp; TALENT</div><h4>智耀魔方</h4><p>专注企业组织与人才战略，拥有 20 余年专业积淀及丰富的 500 强企业服务实践，能力覆盖组织与人才体系、人力资源职能转型、共享服务、数字化产品与运营落地。</p></article>
+        </div>
+      </section>
+
+      <section class="about-section reveal" aria-labelledby="method-title">
+        <div class="about-section-head"><h3 id="method-title">一场赛事，也是一套真实能力验证方式</h3><p>从企业问题出发，以跨域团队和 AI 工具加速探索，用成果展示连接后续行动。</p></div>
+        <div class="co-method">
+          <div class="co-step"><b>01</b><strong>企业出题</strong><span>把真实经营问题带入赛场</span></div>
+          <div class="co-step"><b>02</b><strong>跨域组队</strong><span>不同专业与经验形成互补</span></div>
+          <div class="co-step"><b>03</b><strong>AI 增强</strong><span>加速研究、设计与原型验证</span></div>
+          <div class="co-step"><b>04</b><strong>72 小时共创</strong><span>在协作中观察判断与执行</span></div>
+          <div class="co-step"><b>05</b><strong>成果延展</strong><span>推动招聘、项目、顾问与创业合作</span></div>
+        </div>
+      </section>
+
+      <section class="about-section reveal" aria-labelledby="invite-title">
+        <div class="about-section-head"><h3 id="invite-title">我们期待与你一起共创</h3><p>无论你带来的是一道值得解决的问题，还是一种希望被真实看见的能力，都可以在这里找到合作的起点。</p></div>
+        <div class="invite-grid">
+          <article class="invite-card"><div class="ik">FOR ENTERPRISES</div><h4>邀请有真实课题的企业</h4><p>希望通过外部视角获得多元解法，同时观察人才、验证方案、建立专业品牌影响力，并探索后续合作。</p><ul><li>业务创新与组织转型课题</li><li>人才识别、招聘与雇主品牌需求</li><li>品牌场景、产品体验与行业共建</li></ul><div class="invite-actions"><a class="btn btn-mint" data-go="plans">查看合作方案 →</a><a class="btn btn-ghost" href="bp.html">企业合作 BP</a></div></article>
+          <article class="invite-card"><div class="ik">FOR TALENTS</div><h4>邀请愿意解决真实问题的人才</h4><p>欢迎大学生、青年人才、女性专业人士及各领域实践者参与。我们看重的不只是履历，更是学习、判断、协作、行动与承担结果的能力。</p><ul><li>对商业、科技与社会议题保持好奇</li><li>愿意跨专业协作并使用 AI 工具</li><li>希望以真实成果连接事业机会</li></ul><div class="invite-actions"><a class="btn btn-mint" href="signup.html">青年人才报名 →</a></div></article>
+        </div>
+      </section>
+
+      <div class="vision-box reveal">
+        <div class="folio">OUR SHARED VISION · 共同愿景</div>
+        <h3>让每个人更早发现自己的优势，让能力在真实实践中被看见</h3>
+        <p>我们希望帮助人才在真实场景中认识自己、积累能力，也帮助企业通过真实课题发现人才、验证方案、连接合作伙伴，推动赛事成果进入长期合作。</p>
+        <div class="vision-points"><div class="vision-point">推动 20 余项企业课题形成具有后续验证价值的方案或原型</div><div class="vision-point">促进招聘、项目、顾问、创新及创业合作持续发生</div><div class="vision-point">连接高校、女性社区、专业人才、企业与行业伙伴</div></div>
+        <div class="vision-sign">认知半径 THERADIUS × 早早早大学生圈 × 智耀魔方</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" style="padding-top:0">
+    <div class="wrap">
+      <div class="folio reveal">FRAMEWORK · 人才观察维度</div>
+      <h2 class="reveal">八项<span class="hl">面向未来的能力</span></h2>
+      <p class="lede reveal">以自我认知为基础，结合企业现场观察、专家专业判断与公众反馈——不设统一权重，不凭一次展示判断人。</p>
+      <div class="cap-grid reveal">
+        <div class="cap"><div class="zh">学习力 <i>Learning</i></div><p>吸收陌生信息、借助 AI 拓展认知，把反馈转为行动</p></div>
+        <div class="cap"><div class="zh">应变力 <i>Agility</i></div><p>面对变化重新判断、调整策略、找到可行路径</p></div>
+        <div class="cap"><div class="zh">驱动力 <i>Drive</i></div><p>了解动力来源，认同课题价值，持续投入并担责</p></div>
+        <div class="cap"><div class="zh">思维力 <i>Thinking</i></div><p>抓关键问题，核验信息与 AI 输出，有据取舍</p></div>
+        <div class="cap"><div class="zh">影响力 <i>Influence</i></div><p>清晰表达、回应立场、推动共识、赢得支持</p></div>
+        <div class="cap"><div class="zh">行动力 <i>Execution</i></div><p>拆解步骤、明确优先级，完成验证并推动落地</p></div>
+        <div class="cap"><div class="zh">协作力 <i>Teamwork</i></div><p>优势互补、信息共享，在分歧中推进课题</p></div>
+        <div class="cap"><div class="zh">韧性力 <i>Resilience</i></div><p>受挫后调整节奏、寻求支持、恢复并持续行动</p></div>
+      </div>
+      <div class="note reveal" style="margin-top:18px">
+        术语备注 — FDE（Forward Deployed Engineer）前沿部署工程师 / OPC（One Person Company）一人公司 / OPT（One Person Team）一人团队。<br>
+        数据来源：Mercer、Heidrick &amp; Struggles、Michael Page、SHRM、瀚纳仕、McKinsey。
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div class="fm">FDT·X LAB — 72H 未来组织实验室<br>认知半径 · AI 时代创新人才链接方式 · 2026</div>
+    <div class="fl-links">
+      <a data-go="home">首页</a>
+      <a data-go="venue">大会现场</a>
+      <a data-go="plans">合作方案</a>
+      <a data-go="about">关于我们</a>
+      <a href="bp.html">企业合作 BP</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ---- tab router ---- */
+const tabs = document.querySelectorAll('.tab');
+const views = { home:'view-home', venue:'view-venue', plans:'view-plans', about:'view-about' };
+function go(name){
+  if(!views[name]) name = 'home';
+  Object.values(views).forEach(id=>document.getElementById(id).classList.remove('active'));
+  document.getElementById(views[name]).classList.add('active');
+  tabs.forEach(t=>t.classList.toggle('on', t.dataset.go===name));
+  window.scrollTo({top:0, behavior:'instant'});
+  if(location.hash !== '#'+name) history.replaceState(null,'','#'+name);
+}
+document.querySelectorAll('[data-go]').forEach(el=>{
+  el.addEventListener('click', e=>{ e.preventDefault(); go(el.dataset.go); });
+});
+window.addEventListener('hashchange', ()=>go(location.hash.slice(1)));
+go(location.hash.slice(1) || 'home');
+
+/* ---- scroll reveal ---- */
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach((el,i)=>{
+  el.style.transitionDelay = (i%6)*60 + 'ms';
+  io.observe(el);
+});
+
+/* ---- number count-up ---- */
+const fmt = (n,c)=> c ? n.toLocaleString('en-US') : String(n);
+const nio = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(!e.isIntersecting) return;
+    const el = e.target; nio.unobserve(el);
+    const target = +el.dataset.count, comma = el.dataset.comma;
+    const dur = 1400, t0 = performance.now();
+    const step = (t)=>{
+      const p = Math.min((t-t0)/dur,1);
+      el.textContent = fmt(Math.round(target*(1-Math.pow(1-p,3))), comma);
+      if(p<1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  });
+},{threshold:.4});
+document.querySelectorAll('[data-count]').forEach(el=>nio.observe(el));
+</script>
+<script src="partnership.js" defer></script>
 </body>
 </html>
